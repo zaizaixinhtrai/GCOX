@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/range_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textColor="#999999"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#999999"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/range_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#999999"
+            android:textSize="15dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/xml_button_done_video" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <com.gcox.fansmeet.features.editvideo.videorange.HorizontalListView
+            android:id="@+id/hlistview"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:requiresFadingEdge="horizontal" />
+
+        <com.gcox.fansmeet.features.editvideo.videorange.VideoRangeSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#00ffffff"
+            custom:gradientWidth="20dp"
+            custom:indicatorWidth="4dp"
+            custom:thumbBandHeight="59dp"
+            custom:thumbWidth="20dp" />
+    </FrameLayout>
+</LinearLayout>

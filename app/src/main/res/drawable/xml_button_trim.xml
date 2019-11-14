@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <item android:drawable="@drawable/btn_chat_push" android:state_pressed="true"/> pressed
+    <item android:drawable="@drawable/btn_chat_push" android:state_focused="true"/> focused
+    <item android:drawable="@drawable/btn_chat_disable" android:state_enabled="false"/> disabled
+    <item android:drawable="@drawable/btn_chat"/> default -->
+    
+
+    <item android:drawable="@drawable/cut_disable" android:state_enabled="false"/> <!-- disabled -->
+   	<item android:drawable="@drawable/cut_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/cut_active"/> <!-- default -->
+
+</selector><!-- From: file:/Users/sonnguyen/Documents/PROJECTWORK/COMPANY%20PROJECT/AnomoStudio/Anomo_Android_studio/uW/src/main/res/drawable/xml_button_trim.xml -->

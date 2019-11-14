@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/root_view"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|top"
+                    android:background="#151515"
+                    style="?attr/themedKeyboardAvailableScreenStyle"
+                    android:orientation="vertical">
+
+        <ImageView
+                android:id="@+id/imv_title"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="138dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:background="?attr/themedToolbarLogoDrawable"/>
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvTitle"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/imv_title"
+                android:layout_height="wrap_content"
+                android:text="@string/create_your_profile"
+                android:textSize="16sp"
+                android:textColor="#BBBBBB"
+                android:letterSpacing="0.14"
+                android:visibility="visible"
+                tools:visibility="visible"
+                app:appFont="@string/font_opensansemibold"/>
+
+        <com.gcox.fansmeet.customview.CircleImageView
+                android:id="@+id/ivUserImage"
+                android:layout_below="@+id/tvTitle"
+                android:layout_width="110dp"
+                android:layout_centerInParent="true"
+                android:layout_height="110dp"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:elevation="3dp"
+                android:src="@drawable/icon_no_image"/>
+
+        <LinearLayout
+                android:id="@+id/llTitle"
+                android:layout_below="@+id/ivUserImage"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content">
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvUserNameTitle"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="Your ID"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/txt_invalid_user_id_warning"
+                    android:layout_width="match_parent"
+                    android:gravity="center|end"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_duplicated_id"
+                    android:textSize="10sp"
+                    android:textColor="#F89E1C"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    app:appFont="@string/font_helvetica"/>
+
+        </LinearLayout>
+
+        <com.gcox.fansmeet.customview.CustomFontEditText
+                android:layout_below="@+id/llTitle"
+                android:id="@+id/edtUserId"
+                style="@style/user_profile_edittext_style"
+                android:digits="abcdefghijklmnopqrstuvwxyz0123456789"
+                android:drawableStart="@drawable/ic_user_id"
+                android:background="@drawable/post_challenge_selector_edittext"
+                app:edt_drawable_start_width="15dp"
+                app:edt_drawable_start_height="15dp"
+                android:paddingStart="10dp"
+                app:edt_drawable_end_width="16dp"
+                android:drawablePadding="0dp"
+                android:paddingEnd="5dp"
+                app:edt_drawable_end_height="15dp"
+                tools:drawableEnd="@drawable/ic_id_name_invalid"
+                android:hint="@string/register_your_id"/>
+
+        <LinearLayout
+                android:id="@+id/llDisplayNameTitle"
+                android:layout_below="@+id/edtUserId"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:gravity="center"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvDisplayNameTitle"
+                    android:layout_below="@+id/edtUserId"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="Display Name"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvDisplayNameWarning"
+                    android:layout_width="match_parent"
+                    android:gravity="center|end"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_pro_display_name_validation"
+                    android:textSize="10sp"
+                    android:textColor="#F89E1C"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    app:appFont="@string/font_helvetica"/>
+
+        </LinearLayout>
+        <com.gcox.fansmeet.customview.CustomFontEditText
+                android:layout_below="@+id/llDisplayNameTitle"
+                android:id="@+id/edtDisplayName"
+                style="@style/user_profile_edittext_style"
+                app:edt_drawable_end_width="16dp"
+                app:edt_drawable_end_height="16dp"
+                android:paddingStart="10dp"
+                tools:drawableEnd="@drawable/ic_id_name_invalid"
+                android:paddingEnd="5dp"
+                android:background="@drawable/post_challenge_selector_edittext"
+                android:hint="Alex"/>
+
+        <LinearLayout
+                android:id="@+id/llEmailTitle"
+                android:layout_below="@+id/edtDisplayName"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:gravity="center"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvEmailTitle"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="Email (optional)"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvEmailWarning"
+                    android:layout_width="match_parent"
+                    android:gravity="center|end"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_invalid"
+                    android:textSize="10sp"
+                    android:textColor="#F89E1C"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    app:appFont="@string/font_helvetica"/>
+        </LinearLayout>
+        <com.gcox.fansmeet.customview.CustomFontEditText
+                android:layout_below="@+id/llEmailTitle"
+                android:id="@+id/edtEmail"
+                style="@style/user_profile_edittext_style"
+                android:inputType="textEmailAddress"
+                app:edt_drawable_end_width="16dp"
+                app:edt_drawable_end_height="16dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="5dp"
+                tools:drawableEnd="@drawable/ic_id_name_invalid"
+                android:background="@drawable/post_challenge_selector_edittext"
+                android:hint="your@email.com"/>
+
+        <LinearLayout
+                android:id="@+id/llReferralTitle"
+                android:layout_below="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:gravity="center"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvReferralCodeTitle"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="Referral Code (optional)"
+                    app:appFont="@string/font_opensansemibold"/>
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvReferralWarning"
+                    android:layout_width="match_parent"
+                    android:gravity="center|end"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:text="@string/referral_code_invalid"
+                    android:textSize="10sp"
+                    android:textColor="#F89E1C"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    app:appFont="@string/font_helvetica"/>
+        </LinearLayout>
+
+        <com.gcox.fansmeet.customview.CustomFontEditText
+                android:layout_below="@+id/llReferralTitle"
+                android:id="@+id/edtReferralCode"
+                style="@style/user_profile_edittext_style"
+                android:paddingStart="10dp"
+                android:digits="0123456789"
+                app:edt_drawable_end_width="16dp"
+                app:edt_drawable_end_height="16dp"
+                android:maxLength="10"
+                android:paddingEnd="5dp"
+                tools:drawableEnd="@drawable/ic_id_name_invalid"
+                android:inputType="number"
+                android:background="@drawable/post_challenge_selector_edittext"
+                android:hint="123456789"/>
+
+        <com.gcox.fansmeet.customview.CustomFontButton
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/edtReferralCode"
+                android:layout_centerInParent="true"
+                android:id="@+id/btnCreateProfile"
+                android:layout_width="150dp"
+                android:textColor="#6F6F6F"
+                android:layout_height="40dp"
+                android:background="@drawable/register_button_bg"
+                android:inputType="number"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/register_begin"
+                android:textSize="14sp"
+                app:appFont="@string/font_opensansbold"
+        />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_marginTop="10dp"
+             android:id="@+id/flGiftItemContainer"
+             android:background="@drawable/send_gift_image_bolder"
+             android:layout_width="50dp"
+             android:layout_height="65dp">
+
+    <com.gcox.fansmeet.customview.RoundRectCornerImageView
+            android:id="@+id/imv_gird_image"
+            android:layout_gravity="center|top"
+            android:layout_width="40dp"
+            android:scaleType="center"
+            app:radius="10dp"
+            tools:src="@drawable/icon_gift_1"
+            android:layout_height="40dp"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/txt_bean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/profile_gift_text_color"
+            android:textSize="10sp"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="bottom|center"
+            tools:text="1"
+            app:appFont="@string/font_opensanssemibold"/>
+
+</FrameLayout>

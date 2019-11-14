@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="margin_top_newfeed_item">30</integer>
+    <integer name="margin_top_newfeed_item_top">10</integer>
+    <integer name="live_show_margin_top_item">40</integer>
+</resources>

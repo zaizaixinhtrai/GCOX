@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:background="@color/stream_title_color_242424"
+                                             android:paddingTop="12dp"
+                                             android:paddingBottom="12dp">
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvPrizeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            tools:text="Normal"
+            android:textColor="@color/white"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="80dp"
+            android:layout_marginEnd="2dp"
+            app:appFont="@string/font_opensansregular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+            android:id="@+id/lnBackground"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/gray_background_border"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvCost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:textColor="@color/clTextGreen"
+                android:textSize="@dimen/text_size_10sp"
+                app:appFont="@string/font_opensansregular"
+                tools:text="50pts"/>
+
+        <com.gcox.fansmeet.customview.CustomFontButton
+                android:id="@+id/btnPlay"
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_weight="1"
+                android:background="@drawable/top_bottom_right_conner_background"
+                android:text="@string/button_play"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10sp"
+                app:appFont="@string/font_opensansbold"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

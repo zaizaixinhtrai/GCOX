@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/card_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#222222"
+                android:padding="5dp"
+                android:paddingRight="5dp">
+
+    <com.gcox.fansmeet.customview.CircleImageView
+        android:id="@+id/ivNotifyAvatar"
+        style="@style/ivUserStyle"
+        android:src="@drawable/pacquiao"
+        android:layout_centerVertical="true" />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvNotifyUser"
+        style="@style/textUserStyle"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tvNotifyTime"
+        android:layout_toRightOf="@+id/ivNotifyAvatar"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="The post that accoumulates the most starts win"
+        app:appFont="@string/font_opensansemibold" />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvNotifyTime"
+        style="@style/textTimeStyle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="3 days ago"
+        android:textColor="#6F6F6F"
+        app:appFont="@string/font_opensansemibold" />
+
+    <ImageView
+        android:id="@+id/ivNotifyMessage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tvNotifyTime"
+        android:background="@drawable/user_image_default"
+        android:visibility="gone" />
+
+</RelativeLayout>

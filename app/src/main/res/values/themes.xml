@@ -1,0 +1,67 @@
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_default</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="colorControlHighlight">@color/colorWhite</item>
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@color/belive_default_background</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="themedToolbarDrawable">@color/transparent</item>
+        <item name="themedToolbarMenuIconDrawable">@drawable/ic_toolbar_menu</item>
+        <!--<item name="themedToolbarNotificationIconDrawable">@drawable/ic_toolbar_notification</item>-->
+        <item name="themedToolbarLogoDrawable">@drawable/logo_small</item>
+        <!--<item name="themedLiveTagDrawable">@drawable/mini_live_tag</item>-->
+        <!--<item name="themedRecordedTagDrawable">@drawable/home_btn_recorded</item>-->
+        <!--<item name="themedLiveCategoryDrawable">@drawable/bg_category_tag</item>-->
+        <!--<item name="themedLiveGradientDrawable">@drawable/home_gradient_tag</item>-->
+        <!--<item name="themedLiveCategoryLongDrawable">@drawable/bg_category_tag</item>-->
+        <!--<item name="themedNavCenterDrawable">@drawable/ic_actionbar</item>-->
+        <!--<item name="themedLiveTitleTextColor">@color/color_777777</item>-->
+        <item name="themedTabDefaultTextColor">@color/text_color_on_tapbar</item>
+        <item name="themedTabSelectedTextColor">@color/text_color_selected_on_tapbar</item>
+        <item name="themedTabIndicatorColor">@color/color_f05c56</item>
+        <item name="themedToolbarTitleStyle">@style/header_title</item>
+        <item name="themedToolbarHeight">@dimen/height_top_bar</item>
+        <!--<item name="themedToolbarBackIconDrawable">@drawable/icon_back_btn_white</item>-->
+        <!--<item name="themedProfileAppBarCustomWindow">true</item>-->
+        <!--<item name="themedNavProfileHeaderHeight">@dimen/nav_header_height</item>-->
+        <item name="themedToolbarPaddingTop">@dimen/status_bar_height</item>
+        <!--<item name="themedShopButtonBackground">@drawable/selector_red_button_radius_end</item>-->
+        <!--<item name="themedShopButtonTextStyle">@style/clickable_ripple</item>-->
+        <!--<item name="themedShopButtonContainerBackground">@drawable/border_radius_red</item>-->
+        <!--<item name="themedShopPromoteTextColor">@color/color_ff5167</item>-->
+        <!--<item name="themedLiveTitleTextFont">@string/font_helveticaneuelight</item>-->
+        <!--<item name="themedTransactionHistoryTextStyle">@style/header_transaction_style</item>-->
+        <!--<item name="themedKeyboardAvailableScreenStyle">@style/keyboardScreenStyle</item>-->
+        <item name="themedScreenBackgroundColor">@color/black</item>
+        <item name="themedNothingTextColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--<style name="AppTheme.NoActionBar.Fullscreen.Xmas" parent="AppTheme.Xmas">-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+    <!--</style>-->
+    <color name="color_f17ba0">#f17ba0</color>
+</resources>

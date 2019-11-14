@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/llCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--<com.appster.customview.OnlyDrawableClickableTextView-->
+            <!--android:id="@+id/tt_facebook"-->
+            <!--style="@style/share_text"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/icon_share_facebook"-->
+            <!--android:text="@string/share_live_facebook" />-->
+
+        <!--<com.appster.customview.OnlyDrawableClickableTextView-->
+            <!--android:id="@+id/txt_instagram"-->
+            <!--style="@style/share_text"-->
+            <!--android:layout_marginLeft="@dimen/share_dialog_margin_left"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/icon_share_intagram"-->
+            <!--android:text="@string/share_live_instagram"-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<com.appster.customview.OnlyDrawableClickableTextView-->
+            <!--android:id="@+id/txt_whatsapp"-->
+            <!--style="@style/share_text"-->
+            <!--android:layout_marginLeft="@dimen/share_dialog_margin_left"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/icon_share_whatsapp"-->
+            <!--android:text="@string/share_live_whatsapp" />-->
+
+        <!--<com.appster.customview.OnlyDrawableClickableTextView-->
+            <!--android:id="@+id/txt_twitter"-->
+            <!--style="@style/share_text"-->
+            <!--android:layout_marginLeft="@dimen/share_dialog_margin_left"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/icon_share_twitter"-->
+            <!--android:text="@string/share_live_twitter"-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<com.appster.customview.OnlyDrawableClickableTextView-->
+            <!--android:id="@+id/txt_email"-->
+            <!--style="@style/share_text"-->
+            <!--android:layout_marginLeft="@dimen/share_dialog_margin_left"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/icon_share_email"-->
+            <!--android:text="@string/share_live_email" />-->
+
+        <!--<com.appster.customview.OnlyDrawableClickableTextView-->
+            <!--android:id="@+id/txt_copylink"-->
+            <!--style="@style/share_text"-->
+            <!--android:layout_marginLeft="@dimen/share_dialog_margin_left"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/post_share_copylink"-->
+            <!--android:text="@string/share_live_copy_link"-->
+            <!--android:visibility="gone" />-->
+
+    </LinearLayout>
+</HorizontalScrollView>

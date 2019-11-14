@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/anomo_general_color_selected" android:state_pressed="true" />
+    <!-- pressed -->
+    <item android:color="@color/anomo_general_color_selected" android:state_focused="true" />
+    <!-- focused -->
+    <item android:color="@color/LightGrey" android:state_enabled="false"></item>
+    <!-- Enable is false -->
+    <item android:color="@color/anomo_general_color" />
+    <!-- default -->
+
+</selector>

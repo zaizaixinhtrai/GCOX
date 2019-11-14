@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_profile_gift_slected_frame" />
+
+    <item android:left="8dp" android:top="16dp" android:right="8dp" android:bottom="16dp"
+        android:width="64dp"
+        android:height="64dp"
+        android:gravity="center"
+        android:drawable="@drawable/bg_profile_gift_glow" />
+</layer-list>

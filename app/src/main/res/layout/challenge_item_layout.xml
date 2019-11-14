@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:background="@color/black"
+                                             android:layout_height="wrap_content">
+
+    <LinearLayout android:id="@+id/llChallengeName"
+                  app:layout_constraintTop_toTopOf="parent"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="50dp">
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvHashTag"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/color_2587E7"
+                android:textSize="13sp"
+                android:gravity="center|start"
+                android:text="#manytshirtchallenges"
+                app:appFont="@string/font_opensanssemibold"/>
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvEntryCount"
+                android:layout_width="wrap_content"
+                android:minWidth="50dp"
+                android:layout_height="30dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center|end"
+                android:background="@drawable/challenges_count_textview_background"
+                android:textSize="12sp"
+                android:gravity="center"
+                tools:text="345"
+                app:appFont="@string/font_opensanssemibold"/>
+
+        <FrameLayout
+                android:id="@+id/fmArrow"
+                android:layout_width="40dp"
+                     android:layout_height="match_parent">
+
+            <ImageView android:layout_width="20dp"
+                       android:src="@drawable/arrow_setting"
+                       android:layout_marginEnd="10dp"
+                       android:layout_gravity="center|end"
+                       android:layout_height="20dp"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/llImageUser"
+                  app:layout_constraintTop_toBottomOf="@+id/llChallengeName"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+
+        <FrameLayout
+                android:id="@+id/fm1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <com.gcox.fansmeet.customview.SquareImageView
+                    android:id="@+id/blurImage1"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <com.gcox.fansmeet.customview.SquareImageView
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/bg_black25_gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <com.gcox.fansmeet.customview.SquareLinearLayout
+                    android:id="@+id/llTop1"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <com.gcox.fansmeet.customview.CircleImageView
+                        android:id="@+id/useImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginBottom="15dp"
+                />
+
+                <com.gcox.fansmeet.customview.CustomFontTextView
+                        android:id="@+id/tvStart1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="12sp"
+                        android:visibility="invisible"
+                        android:layout_below="@+id/llTop"
+                        android:gravity="center"
+                        android:drawableStart="@drawable/icon_star"
+                        android:drawablePadding="4dp"
+                        app:drawable_start_height="10dp"
+                        app:drawable_start_width="10dp"
+                        android:maxLines="1"
+                        tools:text="123,456"
+                        app:appFont="@string/font_opensanssemibold"/>
+
+            </com.gcox.fansmeet.customview.SquareLinearLayout>
+
+        </FrameLayout>
+        <FrameLayout
+                android:id="@+id/fm2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <com.gcox.fansmeet.customview.SquareImageView
+                    android:id="@+id/blurImage2"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            <com.gcox.fansmeet.customview.SquareImageView
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/bg_black25_gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <com.gcox.fansmeet.customview.SquareLinearLayout
+                    android:id="@+id/llTop2"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <com.gcox.fansmeet.customview.CircleImageView
+                        android:id="@+id/useImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginBottom="15dp"
+                />
+
+                <com.gcox.fansmeet.customview.CustomFontTextView
+                        android:id="@+id/tvStart2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/llTop"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:drawableStart="@drawable/icon_star"
+                        android:drawablePadding="4dp"
+                        app:drawable_start_height="10dp"
+                        app:drawable_start_width="10dp"
+                        android:maxLines="1"
+                        tools:text="123,456"
+                        app:appFont="@string/font_opensanssemibold"/>
+
+            </com.gcox.fansmeet.customview.SquareLinearLayout>
+
+        </FrameLayout>
+        <FrameLayout
+                android:id="@+id/fm3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <com.gcox.fansmeet.customview.SquareImageView
+                    android:id="@+id/blurImage3"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            <com.gcox.fansmeet.customview.SquareImageView
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/bg_black25_gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <com.gcox.fansmeet.customview.SquareLinearLayout
+                    android:id="@+id/llTop3"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <com.gcox.fansmeet.customview.CircleImageView
+                        android:id="@+id/useImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginBottom="15dp"
+                />
+
+                <com.gcox.fansmeet.customview.CustomFontTextView
+                        android:id="@+id/tvStart3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/llTop"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:drawableStart="@drawable/icon_star"
+                        android:drawablePadding="4dp"
+                        app:drawable_start_height="10dp"
+                        app:drawable_start_width="10dp"
+                        android:maxLines="1"
+                        tools:text="123,456"
+                        app:appFont="@string/font_opensanssemibold"/>
+
+            </com.gcox.fansmeet.customview.SquareLinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

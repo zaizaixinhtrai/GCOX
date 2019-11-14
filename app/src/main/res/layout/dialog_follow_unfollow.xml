@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_photo_dialog_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_take_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_cancel_photo"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_option"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/Sharevia"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundwhite"
+            android:text="@string/pop_up_option"
+            android:textColor="#D8D6D7"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/LightGrey" />
+
+        <Button
+            android:id="@+id/btn_follow"
+            style="@style/theme_general_option_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="@string/pop_up_follow_user"
+            android:textColor="@drawable/text_blue_selector_v2" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/LightGrey" />
+
+        <Button
+            android:id="@+id/btn_block"
+            style="@style/theme_general_option_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:textColor="@drawable/text_blue_selector_v2" />
+
+        <View
+            android:id="@+id/separater_btn_ban"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/LightGrey"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/btn_ban"
+            style="@style/theme_general_option_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="@string/ban_user"
+            android:textColor="@drawable/text_blue_selector_v2"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_cancel_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_option"
+        android:text="@string/btn_text_cancel"
+        android:textColor="@drawable/text_blue_selector_v2"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

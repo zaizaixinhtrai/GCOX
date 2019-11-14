@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" xmlns:tools="http://schemas.android.com/tools"
+                android:background="@color/color_151515"
+                android:gravity="center"
+                android:paddingLeft="10dp">
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/refill_balance"
+        android:textColor="#595A5C"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/imagestar"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tvBalance"
+        android:scaleType="fitCenter"
+        android:src="@drawable/refill_gem_icon" />
+
+    <TextView
+        android:id="@+id/txt_bean"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imagestar"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:paddingTop="3dp"
+        tools:text="100"
+        android:textColor="#a5bf6a"
+        android:textSize="16sp" />
+
+    <com.gcox.fansmeet.customview.CustomFontButton
+        android:id="@+id/btnInviteFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:visibility="invisible"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/refill_invite_and_get"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensansbold" />
+
+</RelativeLayout>
+

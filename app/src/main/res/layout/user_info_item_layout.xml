@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_user_profile_main_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_151515"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_profile_view_height"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp">
+
+        <com.gcox.fansmeet.customview.CircleImageView
+            android:id="@+id/useImage"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_circle_profile_gradient"
+            android:padding="5dp"
+            android:src="@drawable/user_image_default"
+            app:genderIconHeight="20dp"
+            app:genderIconMarginRelativeHorizon="4dp"
+            app:genderIconMarginRelativeVertical="4dp"
+            app:genderIconWidth="20dp"
+            app:genderPosition="rightBottom" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/useImage"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingEnd="5dp">
+
+                <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvDisplayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:drawableEnd="@drawable/ic_tick"
+                    android:drawablePadding="6dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="#FFFFFF"
+                    android:textDirection="locale"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    app:appFont="@string/font_opensanssemibold"
+                    app:drawable_end_height="17dp"
+                    app:drawable_end_width="17dp"
+                    tools:text="Manny Pacquaio"
+                    tools:visibility="visible" />
+
+                <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="1dp"
+                    android:textColor="#278BED"
+                    android:textSize="12sp"
+                    app:appFont="@string/font_opensanssemibold"
+                    tools:text="mannypacquaio" />
+            </LinearLayout>
+
+            <com.gcox.fansmeet.customview.CustomFontButton
+                android:id="@+id/btFollow"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:text="@string/following"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:visibility="invisible"
+                app:appFont="@string/font_opensansbold"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <com.gcox.fansmeet.customview.BioTextView
+            android:id="@+id/txtAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_user_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/useImage"
+            android:linksClickable="true"
+            android:textColor="@color/color_9c9c9c"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:appFont="@string/font_opensanssemibold"
+            tools:text="Official\n\n\n\n\n\n Many Pacquiaos GCOX Chanel! Come here and join with him!ffgfgfgfgfgfgfgfgfgfgfgfgggfgfgfgfgfgggggfgfggfggggfgfgfgfggfgfgfgfgfgfgffggfggggfgfgfgfggfgfgfgfgfgfgf fggfggggfgfgfgfggfgfgfgfgfgfgf fggfggggfgfgfgfggfgfgfgfgfgfgf fggfggggfgfgfgfggfgfgfgfgfgfgf" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="#1c1c1c"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/llFollower"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/followersCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#278BED"
+                android:textSize="18sp"
+                app:appFont="@string/font_opensansbold"
+                tools:text="15.2m" />
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Followers"
+                android:textColor="@color/user_profile_following_text_color"
+                android:textSize="11sp"
+                app:appFont="@string/font_opensanssemibold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFollowing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvFollowing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#278BED"
+                android:textSize="18sp"
+                app:appFont="@string/font_opensansbold"
+                tools:text="15" />
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/profile_follow"
+                android:textColor="@color/user_profile_following_text_color"
+                android:textSize="11sp"
+                app:appFont="@string/font_opensanssemibold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvChallengesCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#278BED"
+                android:textSize="18sp"
+                app:appFont="@string/font_opensansbold"
+                tools:text="150m" />
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/challengers_title"
+                android:textColor="@color/user_profile_following_text_color"
+                android:textSize="11sp"
+                app:appFont="@string/font_opensanssemibold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

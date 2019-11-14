@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/transparent" />
+
+        </shape>
+    </item>
+
+    <!-- this mess is what we have to do to get a top & bottom border only. -->
+    <item
+        android:top="-2dp"
+        android:left="-2dp">
+        <shape
+            android:shape="rectangle">
+            <stroke android:width="@dimen/gift_item_offset" android:color="@color/gift_grid_divider" />
+            <solid android:color="@null" />
+        </shape>
+    </item>
+
+</layer-list>

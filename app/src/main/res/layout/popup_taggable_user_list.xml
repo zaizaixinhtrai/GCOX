@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/realm_rcv_taggable_user"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    app:rrvIsRefreshable="false"
+    app:rrvLayoutType="LinearLayout"
+    android:background="#fff"
+    />

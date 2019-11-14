@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:padding="20dp"
+                                             android:background="@drawable/send_gift_dialog_bolder"
+                                             android:layout_height="match_parent">
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#278BED"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="GIFT"
+            app:appFont="@string/font_opensanssemibold"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvDescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="@string/send_gift_describe"
+            app:appFont="@string/font_opensanssemibold"/>
+
+    <LinearLayout
+            android:id="@+id/llOne"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescribe"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:background="@drawable/send_gift_image_bolder"
+                     android:layout_width="50dp"
+                     android:layout_height="65dp">
+
+            <com.gcox.fansmeet.customview.RoundRectCornerImageView
+                    android:id="@+id/imageEntries"
+                    android:layout_gravity="center|top"
+                    android:layout_width="40dp"
+                    android:scaleType="center"
+                    app:radius="10dp"
+                    android:src="@drawable/icon_gift_1"
+                    android:layout_height="40dp"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="bottom|center"
+                    android:text="1"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+        </FrameLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_marginStart="15dp"
+                     android:layout_width="50dp"
+                     android:background="@drawable/send_gift_image_bolder"
+                     android:layout_height="65dp">
+
+            <com.gcox.fansmeet.customview.RoundRectCornerImageView
+                    android:layout_gravity="center|top"
+                    android:layout_width="40dp"
+                    android:scaleType="center"
+                    app:radius="10dp"
+                    android:src="@drawable/icon_gift_2"
+                    android:layout_height="40dp"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="3dp"
+                    android:text="5"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+        </FrameLayout>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="50dp"
+                     android:layout_marginStart="15dp"
+                     android:background="@drawable/send_gift_image_bolder"
+                     android:layout_height="65dp">
+
+            <com.gcox.fansmeet.customview.RoundRectCornerImageView
+                    android:layout_gravity="center|top"
+                    android:layout_width="40dp"
+                    android:scaleType="centerInside"
+                    app:radius="10dp"
+                    android:src="@drawable/icon_gift_3"
+                    android:layout_height="40dp"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="bottom|center"
+                    android:text="10"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+        </FrameLayout>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="50dp"
+                     android:layout_marginStart="15dp"
+                     android:background="@drawable/send_gift_image_bolder"
+                     android:layout_height="65dp">
+
+            <com.gcox.fansmeet.customview.RoundRectCornerImageView
+                    android:layout_gravity="center|top"
+                    android:layout_width="40dp"
+                    android:scaleType="centerInside"
+                    app:radius="10dp"
+                    android:src="@drawable/icon_gift_4"
+                    android:layout_height="40dp"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="bottom|center"
+                    android:text="50"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/llTow"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/llOne"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:background="@drawable/send_gift_image_bolder"
+                     android:layout_width="50dp"
+                     android:layout_height="65dp">
+
+            <com.gcox.fansmeet.customview.RoundRectCornerImageView
+                    android:layout_gravity="center|top"
+                    android:layout_width="40dp"
+                    android:scaleType="centerInside"
+                    app:radius="10dp"
+                    android:src="@drawable/icon_gift_5"
+                    android:layout_height="40dp"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="bottom|center"
+                    android:text="100"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+        </FrameLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="50dp"
+                     android:layout_marginStart="15dp"
+                     android:background="@drawable/send_gift_image_bolder"
+                     android:layout_height="65dp">
+
+            <com.gcox.fansmeet.customview.RoundRectCornerImageView
+                    android:layout_gravity="center|top"
+                    android:layout_width="40dp"
+                    android:scaleType="centerInside"
+                    app:radius="10dp"
+                    android:src="@drawable/icon_gift_6"
+                    android:layout_height="40dp"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="3dp"
+                    android:text="150"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+        </FrameLayout>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="50dp"
+                     android:layout_marginStart="15dp"
+                     android:background="@drawable/send_gift_image_bolder"
+                     android:layout_height="65dp">
+
+            <com.gcox.fansmeet.customview.RoundRectCornerImageView
+                    android:layout_gravity="center|top"
+                    android:layout_width="40dp"
+                    android:scaleType="centerInside"
+                    app:radius="10dp"
+                    android:src="@drawable/icon_gift_7"
+                    android:layout_height="40dp"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="bottom|center"
+                    android:text="200"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+        </FrameLayout>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="50dp"
+                     android:layout_marginStart="15dp"
+                     android:background="@drawable/send_gift_image_bolder"
+                     android:layout_height="65dp">
+
+            <com.gcox.fansmeet.customview.RoundRectCornerImageView
+                    android:layout_gravity="center|top"
+                    android:layout_width="40dp"
+                    android:scaleType="centerInside"
+                    app:radius="10dp"
+                    android:src="@drawable/icon_gift_8"
+                    android:layout_height="40dp"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="bottom|center"
+                    android:text="250"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <Button android:layout_width="100dp"
+            android:id="@+id/btOk"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llTow"
+            android:background="@drawable/send_gift_button_background"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="@string/okay"
+            android:layout_height="30dp"/>
+
+</android.support.constraint.ConstraintLayout>

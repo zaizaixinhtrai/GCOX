@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:background="#151515"
+                                             android:layout_height="match_parent">
+
+    <com.gcox.fansmeet.customview.CircleImageView
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/ivGiftImage"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:src="@drawable/gift_image"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            app:layout_constraintTop_toBottomOf="@+id/ivGiftImage"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/tvInviteFriendTitle"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            tools:text="@string/invite_friend_title"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#BBBBBB"
+            app:appFont="@string/font_opensansemibold"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            app:layout_constraintTop_toBottomOf="@+id/tvInviteFriendTitle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/tvreferral_code_title"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:text="@string/referral_code_title"
+            android:textSize="16sp"
+            android:textColor="#EEEEEE"
+            android:visibility="visible"
+            app:appFont="@string/font_opensansemibold"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvreferral_code_title"
+            android:id="@+id/tvRefId"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="21sp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:maxLines="1"
+            android:layout_width="250dp"
+            android:gravity="center"
+            app:appFont="@string/font_opensansbold"
+            android:textColor="#278BED"
+            android:background="@drawable/post_challenge_selector_edittext"/>
+
+    <com.gcox.fansmeet.customview.CustomFontButton
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRefId"
+            android:id="@+id/btShare"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:text="@string/share_live_share"
+            android:textColor="@color/white"
+            app:appFont="@string/font_opensansbold"
+            android:background="@drawable/invite_friend_share_button"/>
+
+</android.support.constraint.ConstraintLayout>

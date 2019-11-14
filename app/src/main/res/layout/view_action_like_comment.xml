@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        xmlns:toool="http://schemas.android.com/tools"
+        android:background="@android:color/transparent"
+        android:layout_height="@dimen/item_feed_height_action_like_comment"
+        android:orientation="horizontal">
+
+    <FrameLayout
+            android:id="@+id/fm_like"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/ivLike"
+                android:layout_width="@dimen/icon_action_share_like_size"
+                android:layout_height="@dimen/icon_action_share_like_size"
+                toool:src="@drawable/ic_heart_like_25dp_selected"
+                android:scaleType="fitCenter"/>
+
+        <ProgressBar
+                android:id="@+id/pblikeProgress"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+    </FrameLayout>
+
+
+
+    <ImageView
+            android:id="@+id/imgComment"
+            android:layout_toEndOf="@+id/fm_like"
+            android:layout_width="@dimen/icon_action_share_like_size"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_height="@dimen/icon_action_share_like_size"
+            android:background="@drawable/icon_message"
+            android:scaleType="fitCenter"/>
+
+    <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="@dimen/icon_action_share_like_size"
+            android:layout_toEndOf="@+id/imgComment"
+            android:layout_height="@dimen/icon_action_share_like_size"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_shared"
+            android:scaleType="fitCenter"/>
+
+    <com.gcox.fansmeet.customview.CustomFontButton
+            android:layout_width="150dp"
+            android:id="@+id/btJoinChallenge"
+            android:layout_toEndOf="@+id/imgShare"
+            android:background="@drawable/join_challenge_background"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textSize="12sp"
+            app:appFont="@string/font_opensansbold"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/join_challenge"
+            android:layout_height="30dp"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_toStartOf="@+id/btJoin"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:textColor="#24BE00"
+            android:layout_centerInParent="true"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginEnd="15dp"
+            android:text="@string/view_details"
+        android:textAllCaps="true"
+            app:appFont="@string/font_opensansbold"/>
+
+    <com.gcox.fansmeet.customview.CustomFontButton
+            android:layout_width="60dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btJoin"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/join_challenge_background"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            app:appFont="@string/font_opensansbold"
+            android:text="@string/challengers_join"
+            android:layout_height="30dp"/>
+
+</RelativeLayout>

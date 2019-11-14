@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/item_purchased"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#222222"
+                android:orientation="vertical">
+
+    <com.gcox.fansmeet.customview.SquareImageViewRefill
+        android:id="@+id/coin_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#222222"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="30dp"
+        android:scaleType="fitXY" />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/name_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="7dp"
+            tools:text="Start"
+            android:textColor="#BBBBBB"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:appFont="@string/futuramedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coin_image"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:background="@drawable/refill_gem_icon" />
+
+            <TextView
+                android:id="@+id/usd_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="3dp"
+                android:gravity="center"
+                android:singleLine="true"
+                tools:text="19.99 CC"
+                android:textColor="#C4D501"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_usd"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="15%"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/txt_usd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/topup_background_txt_usd"
+            android:gravity="center"
+            android:padding="5dp"
+            tools:text="150 USD"
+            app:appFont="@string/font_opensansbold"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

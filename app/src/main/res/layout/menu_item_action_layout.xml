@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end|center"
+    android:gravity="end"
+    android:orientation="horizontal">
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#98A506"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensansemibold"
+        tools:text="23455" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_gravity="center|end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp" />
+
+</LinearLayout>

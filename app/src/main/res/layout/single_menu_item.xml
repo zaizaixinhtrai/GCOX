@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gcox.fansmeet.customview.CustomFontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textAllCaps="true"
+    android:text="@string/how_to_play"
+    android:gravity="center"
+    app:appFont="@string/font_opensansemibold"
+    android:textColor="@color/dialogBlue"/>
+

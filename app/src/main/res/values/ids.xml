@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_click_support" type="id" />
+    <item name="sectioning_adapter_tag_key_view_viewholder" type="id"/>
+    <item type="id" name="glide_tag" />
+</resources>

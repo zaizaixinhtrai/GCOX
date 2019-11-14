@@ -1,0 +1,207 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- ooVoo APi for video chat -->
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    // Quick SignUp
+    <dimen name="quick_signup_width_input_text">290dp</dimen>
+    <dimen name="quick_signup_height_input_text">45dp</dimen>
+
+    // TabBar
+    <dimen name="height_top_bar">57dp</dimen> <!-- status bar height + 45-->
+    <dimen name="tabbar_height">50dp</dimen>
+    <dimen name="height_bottom_bar">50dp</dimen>
+    <dimen name="height_top_bar_xmas">69dp</dimen>
+    <dimen name="nav_header_height">190dp</dimen> <!-- nav_header_height  - 24-->
+    <dimen name="nav_header_height_xmas">214dp</dimen>
+    <dimen name="status_bar_height_xmas">24dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="key_board_screen_margin_xmas">-24dp</dimen>
+    <dimen name="key_board_screen_margin">0dp</dimen>
+    // menu write post
+    <dimen name="write_post_heith_width_image">90dp</dimen>
+    <dimen name="write_post_heith_play_icon">15dp</dimen>
+
+    // Chat
+
+    //Arc layout
+    <dimen name="item_circle_size_path">50dp</dimen>
+    <dimen name="item_font_size_path">18sp</dimen>
+    <dimen name="arc_axisRadius">100dp</dimen>
+    <dimen name="arc_radius">50dp</dimen>
+
+    <dimen name="item_offset">1dp</dimen>
+    <dimen name="gift_item_offset">1dp</dimen>
+    <dimen name="recycler_view_item_offset">0.5dp</dimen>
+
+    // Main Activity
+    <dimen name="height_textview_name_home">30dp</dimen>
+    <dimen name="text_size_header_title">15sp</dimen>
+
+    // Edit profile
+
+    // Refill
+    <dimen name="height_list_chat_live_stream">145dp</dimen>
+
+    // Pocket
+    <dimen name="pocket_txt_In_text_size">10sp</dimen>
+
+    // Chat item
+    <dimen name="chat_list_btn_delete">63dp</dimen>
+    <dimen name="chat_list_divider">1.5dp</dimen>
+
+    <dimen name="send_gift_height_dot">6dp</dimen>
+
+    // newfeed
+    <dimen name="margin_left_newsfeed">20dp</dimen>
+    <dimen name="margin_top_newsfeed">10dp</dimen>
+    <dimen name="newfeed_height_load_more_item">40dp</dimen>
+    <dimen name="height_btn_follow">25dp</dimen>
+    <dimen name="width_btn_follow">40dp</dimen>
+    <dimen name="height_image_media">280dp</dimen>
+    <dimen name="min_height_image_media_post">300dp</dimen>
+    // Item feed Stream
+    <dimen name="item_feed_height_stick_header">55dp</dimen>
+    <dimen name="item_feed_text_size_display_name">14sp</dimen>
+    <dimen name="item_feed_text_size_time">13sp</dimen>
+    <dimen name="item_feed_magin_left_type_wall">20dp</dimen>
+    <dimen name="item_feed_height_action_like_comment">35dp</dimen>
+    <dimen name="item_feed_top_comment">5dp</dimen>
+    <dimen name="item_feed_text_size_content_post">16sp</dimen>
+
+    // Login
+    <dimen name="height_icon_app">80dp</dimen>
+    <dimen name="margin_top_iconapp">150dp</dimen>
+    <dimen name="signin_signup_content_width">260dp</dimen>
+    <dimen name="login_options_margin">16dp</dimen>
+    <dimen name="login_btn_size">48dp</dimen>
+    // Camera screen
+
+    <dimen name="camera_high_size">70dp</dimen>
+    <dimen name="close_width">22dp</dimen>
+    <dimen name="close_height">22dp</dimen>
+    <dimen name="flash_icon_width">21.6dp</dimen>
+    <dimen name="flash_icon_height">30dp</dimen>
+    <dimen name="switch_to_camera_icon_width">35.49dp</dimen>
+    <dimen name="switch_to_camera_icon_height">30dp</dimen>
+    <dimen name="take_or_record_camere_size">70dp</dimen>
+    <dimen name="video_icon_width">31.01dp</dimen>
+    <dimen name="video_icon_height">22dp</dimen>
+    <dimen name="gallery_icon_width">27.59dp</dimen>
+    <dimen name="gallery_icon_height">22dp</dimen>
+    <dimen name="camera_width">26.84dp</dimen>
+    <dimen name="camera_height">22dp</dimen>
+    <dimen name="text_news">18sp</dimen>
+    <dimen name="audio_mute_height">30dp</dimen>
+    <dimen name="audio_mute_width">50dp</dimen>
+
+    <dimen name="nearby_height_user_image">130dp</dimen>
+
+    <dimen name="profile_padding_follower_layout">8dp</dimen>
+
+    <!--Sliding menu-->
+    <dimen name="login_playtoken_text_size">15sp</dimen>
+    <dimen name="newfeed_user_image">40dp</dimen>
+
+    <dimen name="home_live_show_height_sport_btn">30dp</dimen>
+    <dimen name="home_live_show_width_sport_btn">90dp</dimen>
+    <dimen name="home_live_show_text_sport_btn">17sp</dimen>
+
+    <dimen name="live_stream_horizontal_listview">37dp</dimen>
+    <dimen name="category_tapbar_height">40dp</dimen>
+    <dimen name="width_button_live">50dp</dimen>
+    <dimen name="height_tapbar_of_search">38dp</dimen>
+    <dimen name="icon_action_share_like_size">22dp</dimen>
+    <dimen name="height_button_live">28dp</dimen>
+    <dimen name="height_btn_share_end_stream">30dp</dimen>
+    <dimen name="text_size_like_count_ended_stream">19sp</dimen>
+    <dimen name="text_size_count_ended_stream">13sp</dimen>
+    <dimen name="top_fan_margin_start">10dp</dimen>
+    <dimen name="sticky_layout_margin_start">@dimen/top_fan_margin_start</dimen>
+    <dimen name="sticky_layout_margin_end">@dimen/top_fan_margin_start</dimen>
+
+    <dimen name="stream_minor_screen_width">120dp</dimen>
+    <dimen name="stream_minor_screen_height">160dp</dimen>
+    <!--post screen-->
+
+    <dimen name="live_host_follow_button_size">30dp</dimen>
+    <dimen name="live_top_panel_bg_margin">4dp</dimen>
+    <dimen name="live_love_views_container_margin_end">4dp</dimen>
+    <dimen name="nav_icon_size">17dp</dimen>
+
+    <!--live commerce-->
+    <dimen name="order_button_corner">20dp</dimen>
+
+    <!-- ripple background -->
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <dimen name="chat_margin_start">7dp</dimen>
+    <dimen name="chat_margin_bottom">3dp</dimen>
+    <dimen name="trivia_option_view_radius">29dp</dimen>
+    <dimen name="trivia_bg_view_radius">10dp</dimen>
+    <dimen name="alert_width">300dp</dimen>
+    <dimen name="trivia_padding">12dp</dimen>
+    <dimen name="trivia_border">3dp</dimen>
+
+    <!-- live show options-->
+    <dimen name="optionPadding">8dp</dimen>
+    <dimen name="optionPaddingHaft">7dp</dimen>
+    <dimen name="live_show_option_height">38dp</dimen>
+
+    <!-- Points system-->
+    <dimen name="mystery_box_height">210dp</dimen>
+    <dimen name="mystery_box_radius">7dp</dimen>
+    <dimen name="mystery_box_margin">20dp</dimen>
+    <dimen name="mystery_box_thumb_height">120dp</dimen>
+    <dimen name="mystery_box_thumb_radius">7dp</dimen>
+    <dimen name="mystery_box_prize_item_height">50dp</dimen>
+    <dimen name="mystery_box_prize_item_margin">8dp</dimen>
+    <dimen name="mystery_box_prize_item_radius">5dp</dimen>
+    <dimen name="prize_header_image_height">200dp</dimen>
+    <dimen name="prize_item_height">80dp</dimen>
+    <dimen name="prize_item_width">315dp</dimen>
+    <dimen name="open_radius">8dp</dimen>
+    <dimen name="profile_top_fans_user_image">55dp</dimen>
+    <dimen name="profile_padding_left">15dp</dimen>
+    <dimen name="profile_padding_right">15dp</dimen>
+    <dimen name="banner_height">180dp</dimen>
+    <dimen name="icon_toolbar_height">40dp</dimen>
+    <dimen name="icon_toolbar_width">92dp</dimen>
+
+    <!--user profile-->
+    <dimen name="user_profile_view_height">150dp</dimen>
+
+
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_onboard_title">24sp</dimen>
+    <dimen name="text_size_onboard_msg">14sp</dimen>
+
+    <dimen name="text_size_small">@dimen/text_size_12sp</dimen>
+    <dimen name="text_size_default">@dimen/text_size_14sp</dimen>
+    <dimen name="text_size_medium">@dimen/text_size_16sp</dimen>
+    <dimen name="text_size_large">@dimen/text_size_18sp</dimen>
+
+    <dimen name="market_header_title_size">18sp</dimen>
+    <dimen name="market_header_subline_size">14sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>

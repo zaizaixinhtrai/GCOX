@@ -1,0 +1,289 @@
+import com.android.builder.core.DefaultManifestParser
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        // These docs use an open ended version so that our plugin
+        // can be updated quickly in response to Android tooling updates
+
+        // We recommend changing it to the latest version from our changelog:
+        // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+plugins {
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin' version '0.12.2'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("Release_KeyStore.jks")
+            storePassword "LLJ5VvKBSnvYj8Ts"
+            keyAlias "gcox-acclaim"
+            keyPassword "LLJ5VvKBSnvYj8Ts"
+            v2SigningEnabled true
+        }
+        debug {
+            storeFile file("Release_KeyStore_Old.jks")
+            storePassword "123456"
+            keyAlias "gcox"
+            keyPassword "123456"
+            v2SigningEnabled true
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 2
+        versionName "1.0.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        archivesBaseName = "GCOX-versionCode-$versionCode"
+
+//        manifestPlaceholders = [
+//                onesignal_app_id: '933fc8f1-f915-4cc5-b213-00877d6c2220',
+//                // Project number pulled from dashboard, local value is ignored.
+//                onesignal_google_project_number: 'REMOTE'
+//        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    configurations {
+//        all*.exclude group: 'com.android.support:27.1.1'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+//            manifestPlaceholders = [facebook_app_id: "1692857094271471"]
+
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+            jniDebuggable true
+        }
+    }
+    productFlavors {
+        def ENDPOINT = "API_ENDPOINT"
+        def AWS_S3_SERVER_LINK = "AWS_S3_SERVER_LINK"
+
+        stag {
+            applicationId "com.gcox.fansmeet.staging"
+            resValue "string", "facebook_app_id", "2214080145478616"
+            resValue "string", "app_name", "StgACCLAIM!"
+            flavorDimensions "belive"
+            buildConfigField "String", ENDPOINT, "\"https://famousmeetapi.smartblockdev.com/\""
+            buildConfigField "String", AWS_S3_SERVER_LINK, "\"http://zpop-staging.s3-ap-southeast-1.amazonaws.com\""
+            buildConfigField "String", "IAP_KEY64BIT", "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo2NZAd+cGmqaw6+Q4LjGCnYA80zHt/CbRwvjnCrSy0xNGLTXmX6t3KMfNxwvtscg+kD1ERxj9IZIunWNHHPkfN6OjWNOrH/+20C8vRs/+Et1UCf2X64qWtKU27dGuyOis2NxJ9NncPyj8zcKvd6UM0FJQL0t60RxaAJEhsWiz+xjksijjhVQIALVIidy8vKlTeVHP5pFi2SuI8vMiIcBZzJeNtPU23CWP+wfeFfsmcmOkSmvKiskKx/GJax8JQCzKPf54J9S9lrcuqznHBat4dJc63dX/8AygoQqwkpnbLmgL3TW4skwndI2eraLKPpIAg48jgBBDB2WVcn9jjLlKQIDAQAB\""
+
+            manifestPlaceholders = [
+                    onesignal_app_id               : '933fc8f1-f915-4cc5-b213-00877d6c2220',
+                    // Project number pulled from dashboard, local value is ignored.
+                    onesignal_google_project_number: 'REMOTE'
+            ]
+        }
+
+        prod {
+            applicationId "com.gcox.acclaim"
+            resValue "string", "app_name", "ACCLAIM!"
+            resValue "string", "facebook_app_id", "2406129246379853"
+            flavorDimensions "belive"
+            buildConfigField "String", ENDPOINT, "\"https://famousmeetapi.acclaim.io/\""
+            buildConfigField "String", AWS_S3_SERVER_LINK, "\"http://zpop-staging.s3-ap-southeast-1.amazonaws.com\""
+            buildConfigField "String", "IAP_KEY64BIT", "\"\""
+
+            manifestPlaceholders = [
+                    onesignal_app_id               : '933fc8f1-f915-4cc5-b213-00877d6c2220',
+                    // Project number pulled from dashboard, local value is ignored.
+                    onesignal_google_project_number: 'REMOTE'
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //    implementation 'com.google.firebase:firebase-core:16.0.1'
+    def appDependencies = rootProject.ext.appDependencies
+    //    testImplementation 'junit:junit:4.12'
+    //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation(
+            appDependencies.design,
+            appDependencies.supportv4,
+            appDependencies.appcompatv7,
+            appDependencies.okhttp,
+            appDependencies.multidex,
+            appDependencies.timber,
+            appDependencies.stetho,
+            appDependencies.stethoRealm,
+            appDependencies.shortvideosdk,
+            appDependencies.oneSignalNotification,
+            appDependencies.eventbus,
+            appDependencies.billing
+    )
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    annotationProcessor appDependencies.butterknife
+    implementation appDependencies.butterknife
+    implementation(appDependencies.glide + '@aar') {
+        transitive = true
+    }
+    kapt appDependencies.glideAnnotationProcessor
+    implementation(appDependencies.glideOkHttp3Integration) {
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+        exclude group: 'com.github.bumptech.glide', module: 'glide'
+
+    }
+    //rxjava
+    implementation appDependencies.rxAndroid
+    implementation appDependencies.rxKotlin
+    implementation appDependencies.rxBinding
+    implementation appDependencies.rxPermissions
+    //Dagger
+    implementation(
+            appDependencies.dagger,
+            appDependencies.daggerAndroid,
+            appDependencies.daggerAndroidSupport
+    )
+    implementation(appDependencies.retrofit) {
+        // exclude Retrofit’s OkHttp peer-dependency module and define own module import
+        exclude module: 'okhttp'
+        exclude module: 'rxjava'
+    }
+    implementation(appDependencies.retrofitGson) {
+        exclude module: 'retrofit'
+    }
+    implementation(appDependencies.retrofitRxAdapter) {
+        exclude module: 'rxjava'
+        exclude module: 'retrofit'
+    }
+    implementation(appDependencies.loggingInterceptor) {
+        exclude module: 'okhttp'
+    }
+    implementation(appDependencies.okhttpUrlConnection) {
+        exclude module: 'okhttp'
+    }
+    implementation(appDependencies.customtabs) {
+        exclude group: 'com.android.support'
+    }
+    implementation(appDependencies.stethoOkhttp) {
+        exclude group: 'com.squareup.okhttp3'
+        exclude group: 'com.facebook.stetho'
+    }
+    //Koin
+    implementation(
+            appDependencies.koinAndroid,
+            appDependencies.koinAndroidScope,
+            appDependencies.koinAndroidViewModel
+    )
+    // resolve dependencies conflict
+    // force the arch core to use the same version 1.1.1
+    implementation 'android.arch.core:runtime:1.1.1'
+    implementation(appDependencies.playServicesGCM) {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+    implementation(appDependencies.playServicesAuth) {
+        exclude module: 'play-services-basement'
+        exclude module: 'play-services-base'
+    }
+    implementation(appDependencies.playServicesAnalytics)
+    implementation(appDependencies.playServicesMeasurement)
+    api(appDependencies.facebookSDK) {
+        exclude group: 'com.android.support', module: 'support-v4'
+//        exclude group: 'com.android.support', module: 'cardview-v7'
+        exclude group: 'com.android.support', module: 'customtabs'
+    }
+    implementation(appDependencies.stethoOkhttp) {
+        exclude group: 'com.squareup.okhttp3'
+        exclude group: 'com.facebook.stetho'
+    }
+    implementation(appDependencies.twitterSDK) {
+        transitive = true
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'io.fabric.sdk.android'
+        exclude module: 'gson'
+        exclude module: 'converter-gson'
+        exclude module: 'okhttp'
+        exclude module: 'retrofit'
+    }
+    implementation project(path: ':ucrop')
+    //    compile 'com.daimajia.slider:library:1.1.5@aar'
+
+    // ksy lib
+    implementation files('libs/libksysv.jar')
+    implementation 'com.ksyun.media:libksylive-java:3.0.2'
+    implementation 'com.ksyun.media:libksylive-arm64:3.0.2'
+    implementation 'com.ksyun.media:libksylive-armv7a:3.0.2'
+    implementation 'com.ksyun.media:libksylive-x86:3.0.2'
+
+    implementation(appDependencies.crashlytics) {
+        transitive = true
+    }
+    implementation project(path: ':realm-recyclerview')
+
+    implementation(appDependencies.branchio) {
+        exclude module: 'answers.shim'
+        exclude module: 'support-annotations'
+    }
+
+    implementation 'ja.burhanrashid52:photoeditor:0.4.0'
+}

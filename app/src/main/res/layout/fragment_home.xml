@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+            android:layout_marginTop="37dp"
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tabBar"
+            android:background="@color/bottom_bar_color"
+            android:layout_width="match_parent"
+            app:tabTextColor="#FFFFFF"
+            app:tabSelectedTextColor="#278BED"
+            android:visibility="visible"
+            app:tabIndicatorColor="#278BED"
+            android:layout_height="37dp"
+            app:tabMode="scrollable"
+            app:tabGravity="fill"/>
+
+    <!--<com.gcox.fansmeet.util.view.PagerSlidingTabStrip-->
+            <!--android:id="@+id/tabsNewHome"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="37dp"-->
+            <!--android:background="@color/bottom_bar_color"-->
+            <!--app:pstsIndicatorColor="#278BED"-->
+            <!--app:pstsShouldExpand="true"-->
+            <!--app:pstsTextDefaultColor="#FFFFFF"-->
+            <!--app:pstsTextSelectedColor="#278BED"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+            <!--app:selectedFont="@string/font_opensansemibold"-->
+            <!--app:defaultFont="@string/font_opensansemibold"-->
+            <!--app:tabSelectedTextSize="14"-->
+            <!--app:tabTextSize="14"-->
+            <!--app:tralling_space="0.00"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <FrameLayout
+            android:id="@+id/fmHeader"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="?attr/themedToolbarHeight"
+            android:background="#00203b"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/iv_backBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_back_btn_white"/>
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/pageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?attr/themedToolbarTitleStyle"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="@string/post_challenge_title"
+            />
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/btCreatePost"
+                android:layout_marginEnd="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_gravity="end|center_vertical"
+                android:textSize="13sp"
+                app:appFont="@string/font_opensanssemibold"
+                android:letterSpacing="0.07"
+                android:text="CREATE"/>
+
+    </FrameLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/rootView"
+                android:layout_width="match_parent"
+                android:background="#151515"
+                android:paddingBottom="25dp"
+                android:layout_height="match_parent">
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/tvChallengeTitle"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="Challenge Title"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontEditText
+                    style="@style/post_challenge_style"
+                    app:layout_constraintTop_toBottomOf="@+id/tvChallengeTitle"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="3dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:id="@+id/edtChallengeTitle"
+                    android:maxLength="50"
+                    android:background="@drawable/post_challenge_selector_edittext"
+                    android:textSize="13sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:textColor="@color/white"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintTop_toBottomOf="@+id/edtChallengeTitle"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/tvLimitTitle"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="0/50"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLimitTitle"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/tvType"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="Type of Challenge"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <LinearLayout
+                    app:layout_constraintTop_toBottomOf="@+id/tvType"
+                    style="@style/post_challenge_style"
+                    android:orientation="horizontal"
+                    android:id="@+id/llCheckBox"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/radioGroup_diffLevel">
+
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:layout_height="wrap_content"
+                            android:text="Text"
+                            android:textColor="@color/post_challenge_title_color"
+                            android:id="@+id/radioButtonText"
+                            android:checked="false"/>
+
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:textColor="@color/post_challenge_title_color"
+                            android:text="Photo"
+                            android:id="@+id/radioButtonPhoto"
+                            android:checked="true"/>
+
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:buttonTint="@color/white"
+                            android:text="Video"
+                            android:textColor="@color/post_challenge_title_color"
+                            android:id="@+id/radioButtonVideo"
+                            android:checked="false"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/llStartTime"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/llCheckBox"
+                    android:layout_width="wrap_content"
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <com.gcox.fansmeet.customview.CustomFontTextView
+                        app:layout_constraintTop_toBottomOf="@+id/fmHeader"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:textSize="11sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/post_challenge_title_color"
+                        android:text="Starts on"
+                        app:appFont="@string/font_opensansemibold"/>
+
+                <FrameLayout android:layout_width="140dp"
+                             android:layout_marginTop="3dp"
+                             android:layout_height="30dp">
+                    <com.gcox.fansmeet.customview.CustomFontTextView
+                            style="@style/post_challenge_style"
+                            app:layout_constraintTop_toBottomOf="@+id/tvChallengeTitle"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:id="@+id/tvStartTime"
+                            android:layout_gravity="center"
+                            android:background="@drawable/challenge_edit_text_bg"
+                            android:textSize="12sp"
+                            android:layout_width="140dp"
+                            android:gravity="center"
+                            android:layout_height="30dp"
+                            tools:text="3 Apr 2019, 00:00"
+                            android:textColor="@color/white"
+                            app:appFont="@string/font_opensansemibold"/>
+
+                    <ImageView
+                            android:background="@drawable/drop_down_arrow"
+                            android:layout_gravity="right|bottom"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/llEndTime"
+                    app:layout_constraintTop_toBottomOf="@+id/llCheckBox"
+                    android:layout_marginStart="25dp"
+                    app:layout_constraintLeft_toRightOf="@+id/llStartTime"
+                    android:layout_width="wrap_content"
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <com.gcox.fansmeet.customview.CustomFontTextView
+                        app:layout_constraintTop_toBottomOf="@+id/fmHeader"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:textSize="11sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/post_challenge_title_color"
+                        android:text="Ends on"
+                        app:appFont="@string/font_opensansemibold"/>
+
+                <FrameLayout android:layout_width="140dp"
+                             android:layout_marginTop="3dp"
+                             android:layout_height="30dp">
+                    <com.gcox.fansmeet.customview.CustomFontTextView
+                            style="@style/post_challenge_style"
+                            app:layout_constraintTop_toBottomOf="@+id/tvChallengeTitle"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:id="@+id/tvEndTime"
+                            android:layout_gravity="center"
+                            android:background="@drawable/challenge_edit_text_bg"
+                            android:textSize="12sp"
+                            android:layout_width="140dp"
+                            android:gravity="center"
+                            android:layout_height="30dp"
+                            tools:text="3 Apr 2019, 00:00"
+                            android:textColor="@color/white"
+                            app:appFont="@string/font_opensansemibold"/>
+
+                    <ImageView
+                            android:background="@drawable/drop_down_arrow"
+                            android:layout_gravity="right|bottom"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintTop_toBottomOf="@+id/llStartTime"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/tvDescriptionTitle"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="Description"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontEditText
+                    style="@style/post_challenge_style"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescriptionTitle"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="3dp"
+                    android:paddingEnd="10dp"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtDescription"
+                    android:maxLength="300"
+                    android:background="@drawable/post_challenge_selector_edittext"
+                    android:textSize="13sp"
+                    android:layout_width="match_parent"
+                    android:minHeight="30dp"
+                    android:textColor="@color/white"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintTop_toBottomOf="@+id/edtDescription"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/tvLimitDescription"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="0/300"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintTop_toBottomOf="@+id/edtDescription"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/tvPrizesTitle"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="Prizes"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontEditText
+                    style="@style/post_challenge_style"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPrizesTitle"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/edtPrizes"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:minHeight="30dp"
+                    android:background="@drawable/post_challenge_selector_edittext"
+                    android:textSize="13sp"
+                    android:maxLength="300"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintTop_toBottomOf="@+id/edtPrizes"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/tvLimitPrizes"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="0/300"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintTop_toBottomOf="@+id/edtPrizes"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/tvSubmissionTitle"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="Submission Settings"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <LinearLayout
+                    android:id="@+id/llSubmission"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSubmissionTitle"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="wrap_content"
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <FrameLayout android:layout_width="60dp"
+                             android:layout_marginTop="3dp"
+                             android:layout_height="30dp">
+                    <com.gcox.fansmeet.customview.CustomFontEditText
+                            android:id="@+id/edMaxSubmission"
+                            style="@style/post_challenge_style"
+                            app:layout_constraintTop_toBottomOf="@+id/tvChallengeTitle"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/post_challenge_selector_edittext"
+                            android:textSize="13sp"
+                            android:layout_width="60dp"
+                            android:inputType="number"
+                            android:text="1"
+                            android:gravity="center"
+                            android:layout_height="30dp"
+                            android:textColor="@color/white"
+                            app:appFont="@string/font_opensansemibold"/>
+
+                    <ImageView
+                            android:background="@drawable/drop_down_arrow"
+                            android:layout_gravity="right|bottom"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"/>
+                </FrameLayout>
+
+                <com.gcox.fansmeet.customview.CustomFontTextView
+                        app:layout_constraintTop_toBottomOf="@+id/fmHeader"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:textSize="13sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textColor="#9B9B9B"
+                        android:text="Submissions allowed per user"
+                        app:appFont="@string/font_opensansemibold"/>
+            </LinearLayout>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    style="@style/post_challenge_style"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintTop_toBottomOf="@+id/llSubmission"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/tvBannerTitle"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/post_challenge_title_color"
+                    android:text="Add a banner"
+                    app:appFont="@string/font_opensansemibold"/>
+
+            <ImageView
+                    android:id="@+id/imAddBanner"
+                    android:layout_marginTop="3dp"
+                    style="@style/post_challenge_style"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBannerTitle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@drawable/add_banner"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

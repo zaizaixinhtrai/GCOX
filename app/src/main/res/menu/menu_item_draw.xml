@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--<item-->
+        <!--android:id="@+id/nav_daily_treats"-->
+        <!--android:icon="@drawable/icon_sliding_daily_treats"-->
+        <!--android:title="@string/daily_treats"-->
+        <!--android:visible="false" />-->
+
+        <!--<item-->
+        <!--android:id="@+id/nav_leader_board"-->
+        <!--android:icon="@drawable/icon_sliding_leaderboard"-->
+        <!--android:title="@string/personal_leaderboard_slider"-->
+        <!--android:visible="false" />-->
+
+        <!--<item-->
+        <!--android:id="@+id/nav_invite_friend"-->
+        <!--android:icon="@drawable/icon_sliding_invitefriend"-->
+        <!--android:title="@string/invite_a_friend_slider" />-->
+
+        <item
+                android:id="@+id/navGem"
+                android:icon="@drawable/icon_sliding_refill"
+                android:visible="true"
+                android:title="@string/gem_menu"/>
+
+        <item
+                android:id="@+id/navStart"
+                android:icon="@drawable/icon_sliding_points"
+                android:visible="true"
+                android:title="@string/start_menu"/>
+
+        <item
+                android:id="@+id/navLoyalty"
+                android:icon="@drawable/icon_sliding_loyalty"
+                android:visible="true"
+                android:title="@string/loyalty_menu"/>
+
+        <item
+                android:id="@+id/navCeleb"
+                android:icon="@drawable/icon_sliding_celeb"
+                android:visible="false"
+                android:title="@string/celeb_menu"/>
+
+        <item
+            android:id="@+id/navReward"
+            android:icon="@drawable/icon_sliding_celeb"
+            android:visible="true"
+            android:title="@string/nav_reward"/>
+
+        <item
+                android:id="@+id/navGacha"
+                android:icon="@drawable/icon_sliding_gacha"
+                android:visible="false"
+                android:title="@string/gacha_menu"/>
+
+        <item
+                android:id="@+id/nav_invite_friend"
+                android:icon="@drawable/icon_sliding_invitefriend"
+                android:title="@string/invite_a_friend_slider" />
+
+        <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/icon_sliding_setting"
+                android:visible="true"
+                android:title="@string/setting_slider"/>
+
+        <!--<item-->
+        <!--android:id="@+id/nav_transaction"-->
+        <!--android:icon="@drawable/slide_transaction"-->
+        <!--android:title="@string/transactions_slider"-->
+        <!--android:visible="false" />-->
+
+        <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/icon_sliding_logout"
+                android:visible="true"
+                android:title="@string/logout_slider"/>
+
+    </group>
+
+</menu>

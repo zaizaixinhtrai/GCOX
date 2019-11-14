@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingTop="25dp">
+
+    <com.gcox.fansmeet.customview.CircleImageView
+        android:id="@+id/ivCelebImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvCelebName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        tools:text="Manny Pacquiao"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14sp"
+        app:appFont="@string/font_opensansemibold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCelebImage"
+        app:layout_constraintStart_toEndOf="@+id/ivCelebImage"
+        app:layout_constraintTop_toTopOf="@+id/ivCelebImage" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCelebImage">
+
+        <LinearLayout
+            android:id="@+id/llPrizeContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clipToPadding="false"
+            android:divider="@drawable/space_divider"
+            android:minHeight="150dp"
+            android:orientation="horizontal"
+            android:scrollbars="none"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:showDividers="beginning|middle|end" />
+    </HorizontalScrollView>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvPrizeList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="8dp"
+        android:text="Prize List"
+        android:textAllCaps="true"
+        android:textColor="@color/dialogBlue"
+        android:textSize="@dimen/text_size_10sp"
+        app:appFont="@string/font_opensansbold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlay"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlay"
+        app:layout_constraintTop_toTopOf="@+id/btnPlay" />
+
+    <com.gcox.fansmeet.customview.CustomFontButton
+        android:id="@+id/btnPlay"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/send_gift_button_background"
+        android:text="@string/button_play"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_10sp"
+        app:appFont="@string/font_opensansbold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCelebName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCelebName" />
+</android.support.constraint.ConstraintLayout>

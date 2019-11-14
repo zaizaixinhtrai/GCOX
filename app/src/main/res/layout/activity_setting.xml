@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/title_notify"
+            style="@style/setting_text_view_category"
+            android:text="@string/setting_title_notifications"
+            android:visibility="gone" />
+
+        <View
+            style="@style/setting_divider"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/setting_linearlayout_style"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_notifications"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_notifications" />
+
+            <Switch
+                android:id="@+id/sw_notifications"
+                style="@style/setting_switch_style" />
+        </RelativeLayout>
+
+        <View
+            style="@style/setting_divider"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/setting_linearlayout_style"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_live_notifications"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_live_notification" />
+
+            <Switch
+                android:id="@+id/sw_live_notifications"
+                style="@style/setting_switch_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/setting_linearlayout_style"
+            android:visibility="gone">
+
+            <View style="@style/setting_divider" />
+
+            <TextView
+                android:id="@+id/txt_notification_sound"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_notification_sound" />
+
+            <Switch
+                android:id="@+id/sw_notification_sound"
+                style="@style/setting_switch_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/setting_linearlayout_style"
+            android:visibility="gone">
+
+            <View style="@style/setting_divider" />
+
+            <TextView
+                android:id="@+id/txt_hide_message_details"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_hide_message_details" />
+
+            <Switch
+                android:id="@+id/sw_hide_message_details"
+                style="@style/setting_switch_style" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            style="@style/setting_linearlayout_style"
+            android:visibility="gone">
+
+            <View style="@style/setting_divider" />
+
+            <TextView
+                android:id="@+id/txt_Messaging"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_Messaging" />
+
+            <Switch
+                android:id="@+id/sw_Messaging"
+                style="@style/setting_switch_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fm_imv_arrow_language"
+            style="@style/setting_linearlayout_style"
+            android:visibility="gone">
+
+            <View style="@style/setting_divider" />
+
+            <TextView
+                android:id="@+id/txt_title_lang"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_Language" />
+
+            <TextView
+                android:id="@+id/txt_language"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/imv_arrow_language"
+                android:gravity="center"
+                android:text="English"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/imv_arrow_language"
+                style="@style/setting_image_stype" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/setting_divider"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_profile"
+            style="@style/setting_text_view_category"
+            android:text="@string/setting_Profile" />
+
+        <View style="@style/setting_divider" />
+
+
+        <RelativeLayout
+            android:id="@+id/fm_Edit_Profile"
+            style="@style/setting_linearlayout_style">
+
+
+            <TextView
+                android:id="@+id/txt_edit_prifile"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_Edit_Profile" />
+
+            <ImageView style="@style/setting_image_stype" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_blocked_list"
+            style="@style/setting_linearlayout_style">
+
+            <View style="@style/setting_divider" />
+
+            <TextView
+                style="@style/setting_textview_style"
+                android:text="@string/setting_blocked_list" />
+
+            <ImageView style="@style/setting_image_stype" />
+        </RelativeLayout>
+
+
+        <View style="@style/setting_divider" />
+
+        <TextView
+            android:id="@+id/title_suport"
+            style="@style/setting_text_view_category"
+            android:text="@string/setting_Support" />
+
+        <View style="@style/setting_divider" />
+
+        <RelativeLayout
+                android:id="@+id/fmRedemption"
+                style="@style/setting_linearlayout_style">
+
+            <TextView
+                    android:id="@+id/txt_Redemption"
+                    style="@style/setting_textview_style"
+                    android:text="@string/setting_Redemption" />
+
+            <ImageView style="@style/setting_image_stype" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fm_About_Us"
+            style="@style/setting_linearlayout_style">
+            <View style="@style/setting_divider" />
+            <TextView
+                android:id="@+id/txt_about"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_About_Us" />
+
+            <ImageView style="@style/setting_image_stype" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fm_Terms_And_Conditions"
+            style="@style/setting_linearlayout_style">
+
+            <View style="@style/setting_divider" />
+
+            <TextView
+                android:id="@+id/txt_Terms_And_Conditions"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_Terms_And_Conditions" />
+
+            <ImageView style="@style/setting_image_stype" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fm_Deactivate_Account"
+            style="@style/setting_linearlayout_style"
+            android:visibility="gone">
+
+            <View style="@style/setting_divider" />
+
+            <TextView
+                android:id="@+id/txt_Deactivate"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_Deactivate_Account" />
+
+            <ImageView style="@style/setting_image_stype" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_version"
+            style="@style/setting_linearlayout_style"
+            android:visibility="visible">
+
+            <View style="@style/setting_divider" />
+
+            <TextView
+                android:id="@+id/txt_version"
+                style="@style/setting_textview_style"
+                android:text="@string/setting_version" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:text="@string/setting_check_update" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

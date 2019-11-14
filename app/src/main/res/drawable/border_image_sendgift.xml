@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item>-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<gradient-->
+                <!--android:type="linear"-->
+                <!--android:centerX="0.5"-->
+                <!--android:centerY="0.5"-->
+                <!--android:startColor="#b4ffd460"-->
+                <!--android:endColor="#b498d7de"-->
+                <!--android:angle="135" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+
+    <!--<item android:left="8dp" android:top="4dp" android:right="8dp" android:bottom="16dp"-->
+        <!--android:width="64dp"-->
+        <!--android:height="64dp"-->
+        <!--android:gravity="center">-->
+        <!--<shape android:shape="oval">-->
+            <!--<gradient-->
+                <!--android:type="linear"-->
+                <!--android:centerX="0.5"-->
+                <!--android:centerY="0.5"-->
+                <!--android:startColor="#b4ffd460"-->
+                <!--android:endColor="#b498d7de"-->
+                <!--android:angle="135" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <item android:drawable="@drawable/bg_profile_gift_slected_frame" />
+
+    <item android:left="8dp" android:top="16dp" android:right="8dp" android:bottom="16dp"
+        android:width="64dp"
+        android:height="64dp"
+        android:gravity="center"
+        android:drawable="@drawable/bg_profile_gift_glow" />
+</layer-list>

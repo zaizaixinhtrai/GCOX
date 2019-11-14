@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_marginStart="10dp"
+              android:paddingEnd="7dp"
+              android:paddingStart="7dp"
+              android:layout_marginEnd="10dp"
+              android:background="#242424"
+              android:layout_height="55dp">
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:text="@string/user_type_celebrity"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:layout_gravity="center|start"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:background="@drawable/loyalty_celebrity_background"
+            android:layout_height="wrap_content"
+            app:appFont="@string/font_opensansemibold"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvDisplayName"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Manny Pacquiao"
+            android:textSize="13sp"
+            android:layout_gravity="center|start"
+            android:textColor="#BBBBBB"
+            android:layout_height="wrap_content"
+            app:appFont="@string/font_opensansemibold"/>
+
+    <View android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_height="match_parent">
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvLoyalty"
+                android:layout_width="wrap_content"
+                android:text="+ 1,000"
+                android:layout_gravity="center|end"
+                android:textColor="#C4D501"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                app:appFont="@string/font_opensansemibold"/>
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvTime"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:text="1 Apr 2019, 12:01"
+                android:layout_gravity="center|end"
+                android:textSize="9sp"
+                android:textColor="#6F6F6F"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                app:appFont="@string/font_opensansemibold"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:paddingBottom="10dp"
+        android:background="#212121">
+
+    <com.gcox.fansmeet.customview.AutoScrollViewPager
+            android:id="@+id/pager"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"/>
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tabDots"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:tabBackground="@drawable/home_banner_tab_selector"
+            app:tabGravity="center"
+            app:tabPaddingStart="10dp"
+            app:tabMinWidth="20dp"
+            app:tabPaddingEnd="10dp"
+            app:tabIndicatorHeight="0dp"/>
+
+</RelativeLayout>

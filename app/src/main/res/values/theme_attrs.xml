@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="beLiveTheme">
+        <attr name="themedToolbarDrawable" format="reference" />
+        <attr name="themedToolbarMenuIconDrawable" format="reference" />
+        <attr name="themedToolbarNotificationIconDrawable" format="reference" />
+        <attr name="themedToolbarLogoDrawable" format="reference" />
+        <attr name="themedToolbarBackIconDrawable" format="reference" />
+        <attr name="themedLiveTagDrawable" format="reference" />
+        <attr name="themedRecordedTagDrawable" format="reference" />
+        <attr name="themedLiveCategoryDrawable" format="reference" />
+        <attr name="themedLiveCategoryLongDrawable" format="reference" />
+        <attr name="themedLiveGradientDrawable" format="reference" />
+        <attr name="themedLiveTitleTextColor" format="reference" />
+        <attr name="themedLiveTitleTextFont" format="reference" />
+        <attr name="themedNavCenterDrawable" format="reference" />
+        <attr name="themedTabDefaultTextColor" format="reference" />
+        <attr name="themedTabSelectedTextColor" format="reference" />
+        <attr name="themedTabIndicatorColor" format="reference" />
+        <attr name="themedToolbarTitleStyle" format="reference" />
+        <attr name="themedTransactionHistoryTextStyle" format="reference" />
+        <attr name="themedToolbarHeight" format="reference"/>
+        <attr name="themedProfileAppBarCustomWindow" format="boolean"/>
+        <attr name="themedNavProfileHeaderHeight" format="reference"/>
+        <attr name="themedToolbarPaddingTop" format="reference"/>
+        <attr name="themedShopButtonBackground" format="reference"/>
+        <attr name="themedShopButtonTextStyle" format="reference"/>
+        <attr name="themedShopButtonContainerBackground" format="reference"/>
+        <attr name="themedShopPromoteTextColor" format="reference"/>
+        <attr name="themedKeyboardAvailableScreenStyle" format="reference"/>
+        <attr name="themedScreenBackgroundColor" format="reference" />
+        <attr name="themedNothingTextColor" format="reference" />
+    </declare-styleable>
+</resources>

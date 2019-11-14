@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:background="@color/color_151515"
+             android:orientation="vertical" android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="7dp"
+            android:id="@+id/recyclerView"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_151515"
+            android:fillViewport="true"/>
+
+    <TextView
+            android:id="@+id/tvNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="@string/start_capturing_and_share_your_moments"
+            android:textColor="@color/grey_text_color"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+</FrameLayout>

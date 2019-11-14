@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:id="@+id/llGiftContainer"
+                  android:layout_width="match_parent"
+                  android:paddingStart="20dp"
+                  android:paddingBottom="20dp"
+                  android:paddingEnd="10dp"
+                  android:paddingTop="10dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="11dp"
+                  android:layout_marginTop="11dp"
+                  android:layout_gravity="bottom"
+                  android:background="@drawable/send_gift_dialog_bolder"
+                  android:orientation="vertical">
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="#278BED"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/gift"
+                app:appFont="@string/font_opensansbold"/>
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvDescribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#58585B"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:text="@string/send_gift_describe"
+                app:appFont="@string/font_opensanssemibold"/>
+
+        <LinearLayout
+                android:layout_marginTop="15dp"
+                android:id="@+id/ln_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minHeight="150dp"
+                android:orientation="vertical">
+
+            <com.gcox.fansmeet.customview.WrapContentHeightViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/viewPagerCountDots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"/>
+
+        <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/txt_total_gem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="4dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/refill_gem_icon"
+                    android:gravity="center"
+                    tools:text="0"
+                    android:textColor="@color/profile_gift_text_color"
+                    android:textSize="15sp"
+                    app:drawable_height="17dp"
+                    app:drawable_width="17dp"/>
+
+            <ImageButton
+                    android:id="@+id/btnRefill"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/ic_profile_gift_refill"/>
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"/>
+
+            <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="80dp"
+                    android:text="@string/button_send"
+                    android:textColor="@color/white"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/send_gift_button_background"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/imClose"
+            android:layout_width="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/close_send_gift"
+            android:layout_height="25dp"/>
+</RelativeLayout>

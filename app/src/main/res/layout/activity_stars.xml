@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                              xmlns:tools="http://schemas.android.com/tools"
+                                              android:id="@+id/swiperefresh"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:background="#151515"
+                  android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:paddingLeft="10dp">
+
+            <TextView
+                    android:id="@+id/tvBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/refill_balance"
+                    android:textColor="#9B9B9B"
+                    android:textSize="13sp"/>
+
+            <ImageView
+                    android:id="@+id/imagestar"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tvBalance"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_gift_star"/>
+
+            <TextView
+                    android:id="@+id/txt_bean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imagestar"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:paddingTop="3dp"
+                    tools:text="100"
+                    android:textColor="#C4D501"
+                    android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.gcox.fansmeet.core.adapter.recyclerview.LoadMoreRecyclerView
+                    android:id="@+id/rcvStars"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    tools:listitem="@layout/stars_row_layout"
+                    android:layout_height="match_parent"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+            <TextView
+                    android:id="@+id/no_data_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/toppan_have_not_fan"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

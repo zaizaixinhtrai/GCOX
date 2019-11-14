@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515">
+
+    <FrameLayout
+        android:id="@+id/fmUserImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/drop_down_arrow" />
+
+        <com.gcox.fansmeet.customview.CircleImageView
+            android:id="@+id/ivUserImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tvTitle"
+            android:layout_gravity="center"
+            android:src="@drawable/user_image_default" />
+    </FrameLayout>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:appFont="@string/font_opensansemibold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fmUserImage"
+        tools:text="username" />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvDisplayNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Display Name"
+        android:textColor="@color/post_challenge_title_color"
+        android:textSize="11sp"
+        app:appFont="@string/font_opensansemibold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+
+    <com.gcox.fansmeet.customview.CustomFontEditText
+        android:id="@+id/edtDisplayName"
+        style="@style/user_profile_edittext_style"
+        android:background="@drawable/post_challenge_selector_edittext"
+        android:maxLength="16"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDisplayNameTitle" />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvLimitDisplayName"
+        style="@style/user_profile_edittext_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:text="0/16"
+        android:textColor="@color/post_challenge_title_color"
+        android:textSize="11sp"
+        app:appFont="@string/font_opensansemibold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDisplayName" />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvEmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/share_live_email"
+        android:textColor="@color/post_challenge_title_color"
+        android:textSize="11sp"
+        app:appFont="@string/font_opensansemibold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLimitDisplayName" />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvInvalidEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center|end"
+        android:text="@string/email_invalid"
+        android:textColor="#F89E1C"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:appFont="@string/font_helvetica"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLimitDisplayName"
+        tools:visibility="visible" />
+
+    <com.gcox.fansmeet.customview.CustomFontEditText
+        android:id="@+id/edtEmail"
+        style="@style/user_profile_edittext_style"
+        android:background="@drawable/post_challenge_selector_edittext"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:edt_drawable_end_height="16dp"
+        app:edt_drawable_end_width="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailTitle"
+        tools:drawableEnd="@drawable/ic_id_name_invalid" />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvBioTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Bio"
+        android:textColor="@color/post_challenge_title_color"
+        android:textSize="11sp"
+        app:appFont="@string/font_opensansemibold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+
+    <com.gcox.fansmeet.customview.CustomFontEditText
+        android:id="@+id/edtBio"
+        style="@style/user_profile_edittext_style"
+        android:layout_height="wrap_content"
+        android:background="@drawable/post_challenge_selector_edittext"
+        android:gravity="top|start"
+        android:lines="5"
+        android:maxLength="80"
+        android:maxLines="80"
+        android:minHeight="40dp"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBioTitle"
+        tools:text="IG | TW | @carowozniacki  | Official Web | https://carolinewozniacki.com/" />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+        android:id="@+id/tvLimitBio"
+        style="@style/user_profile_edittext_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:text="0/80"
+        android:textColor="@color/post_challenge_title_color"
+        android:textSize="11sp"
+        app:appFont="@string/font_opensansemibold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBio" />
+
+</android.support.constraint.ConstraintLayout>

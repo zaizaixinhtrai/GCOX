@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:minWidth="300dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/roundwhite"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="25dp">
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:textAlignment="center"
+            android:text="@string/redemption_code_title"
+            android:textColor="@color/dialog_confirm_title_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:appFont="@string/font_opensansbold"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:paddingBottom="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <!--<com.gcox.fansmeet.customview.CustomFontEditText-->
+        <!--android:id="@+id/edtRedemptionCode"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:minWidth="100dp"-->
+        <!--android:digits="abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"-->
+        <!--android:lineSpacingExtra="3dp"-->
+        <!--android:maxLength="25"-->
+        <!--android:maxLines="1"-->
+        <!--android:padding="5dp"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="#58585b"-->
+        <!--android:textSize="15sp"-->
+        <!--app:appFont="@string/font_opensansregular"/>-->
+
+        <com.gcox.fansmeet.customview.CustomFontEditText
+                android:id="@+id/edtRedemptionCode"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:digits="abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:background="@drawable/input_redemption_background"
+                android:maxLength="16"
+                android:lineSpacingExtra="3dp"
+                android:hint="@string/redemption_hint"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minWidth="180dp"
+                android:textColor="#58585b"
+                android:textSize="14sp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/parentOKButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+        <com.gcox.fansmeet.customview.CustomFontButton
+                android:id="@+id/cancel"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_grey_button"
+                android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:letterSpacing="0.09"
+                android:text="@string/btn_text_cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:appFont="@string/font_opensansbold"
+                tools:targetApi="lollipop"/>
+
+
+        <com.gcox.fansmeet.customview.CustomFontButton
+                android:id="@+id/ok"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_red_button"
+                android:letterSpacing="0.09"
+                app:appFont="@string/font_opensansbold"
+                android:text="@string/btn_text_ok"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:targetApi="lollipop"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="50dp"
+             android:layout_height="55dp"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.gcox.fansmeet.customview.RoundRectCornerImageView
+            android:id="@+id/imageEntries"
+            android:layout_gravity="center|top"
+            android:layout_width="40dp"
+            android:scaleType="center"
+            app:radius="10dp"
+            android:src="@drawable/icon_gift_star"
+            android:layout_height="40dp"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_gravity="bottom|center"
+            android:text="1"
+            app:appFont="@string/font_opensanssemibold"/>
+
+</FrameLayout>

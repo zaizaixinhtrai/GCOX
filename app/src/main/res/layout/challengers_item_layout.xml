@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:background="@color/color_151515"
+                                             android:paddingEnd="@dimen/profile_padding_right"
+                                             android:paddingStart="@dimen/profile_padding_left"
+                                             android:layout_height="wrap_content">
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvChallengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/color_2587E7"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="@string/challengers_title"
+            app:appFont="@string/font_opensanssemibold"/>
+
+    <include
+            app:layout_constraintTop_toBottomOf="@+id/tvChallengers"
+            android:id="@+id/llImage"
+            android:layout_marginTop="15dp"
+            layout="@layout/feed_header_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <View android:id="@+id/separate2"
+          android:layout_width="match_parent"
+          android:background="@color/separate_feed_color"
+          android:layout_marginTop="15dp"
+          app:layout_constraintTop_toBottomOf="@+id/llImage"
+          android:layout_height="0.5dp"/>
+
+    <include
+            android:id="@+id/llChallengers"
+            layout="@layout/challenge_info_layout"
+            app:layout_constraintTop_toBottomOf="@+id/separate2"
+            android:layout_width="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="wrap_content"/>
+
+    <include
+            app:layout_constraintTop_toBottomOf="@+id/llChallengers"
+            android:id="@+id/ln_action_group"
+            layout="@layout/view_action_like_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+            android:id="@+id/llLikesCount"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ln_action_group"
+            android:layout_height="wrap_content">
+
+        <ImageView android:layout_width="13dp"
+                   android:src="@drawable/icon_like_small"
+                   android:layout_height="13dp"/>
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvLikesCount"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_9c9c9c"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="148,550 likes"
+                app:appFont="@string/font_opensanssemibold"/>
+    </LinearLayout>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/comment1"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/llLikesCount"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_2587E7"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="#mannypacquaio"
+            app:appFont="@string/font_opensanssemibold"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvHashTag"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/comment1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/color_2587E7"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="#mannytishirtchallengers"
+            app:appFont="@string/font_opensanssemibold"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvMoreComments"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHashTag"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingRight="10dp"
+            android:text="View all 10,456 comments"
+            android:textColor="@color/color_9c9c9c"
+            app:appFont="@string/font_opensanssemibold"/>
+
+</android.support.constraint.ConstraintLayout>

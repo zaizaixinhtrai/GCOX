@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="40"-->
+    <!--/>-->
+
+    <ImageView
+            android:id="@+id/ivSplashImage"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_login_bg"
+    />
+
+    <ImageView
+            android:id="@+id/imvLogo"
+            android:layout_width="180dp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="top|center"
+            android:layout_centerHorizontal="true"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fm_login_logo"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imvLogo"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto"
+            android:text="@string/login_title_text"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="60"/>-->
+
+</RelativeLayout>

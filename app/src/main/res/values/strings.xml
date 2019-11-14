@@ -1,0 +1,1151 @@
+<resources>
+    <!--<string name="facebook_app_id">2214080145478616</string>-->
+    <!--<string name="app_name">ACCLAIM!</string>-->
+
+    <string name="no_internet_connection">Please ensure that you are in an area with strong WiFI/3G Signal</string>
+    <string name="connecting_msg">Connecting…</string>
+    <string name="processing_msg">Processing…</string>
+    <string name="activity_choose_language_english">English</string>
+
+    <string name="font_futuracondensedmedium" translatable="false">futuracondensedmedium.ttf</string>
+    <string name="font_HelveticaNeueRegular" translatable="false">helveticaregular.ttf</string>
+    <string name="font_helveticaneuebold" translatable="false">helveticabold.otf</string>
+    <string name="font_helveticaneuelight" translatable="false">helveticalight.otf</string>
+    <string name="futuramedium" translatable="false">futuramedium.ttf</string>
+    <string name="font_opensansbold" translatable="false">opensansbold.ttf</string>
+    <string name="font_opensansregular" translatable="false">opensansregular.ttf</string>
+    <string name="font_opensansemibold" translatable="false">opensanssemibold.ttf</string>
+    <string name="font_opensanssemibold" translatable="false">opensanssemibold.ttf</string>
+    <string name="font_opensansextrabold" translatable="false">opensansextrabold.ttf</string>
+    <string name="font_opensanslight" translatable="false">opensanslight.ttf</string>
+    <string name="font_helvetica" translatable="false">helvetica.otf</string>
+    <string name="font_tekobold" translatable="false">teko-bold.ttf</string>
+    <string name="font_tekolight" translatable="false">teko-light.ttf</string>
+    <string name="font_tekoregular" translatable="false">teko-regular.ttf</string>
+    <string name="font_tekomedium" translatable="false">teko-medium.ttf</string>
+    <string name="font_tekosemibold" translatable="false">teko-semibold.ttf</string>
+    <string name="font_ralewayeregular" translatable="false">ralewayregular.ttf</string>
+    <string name="font_ralewaybold" translatable="false">ralewaybold.ttf</string>
+    <string name="font_ralewayreg" translatable="false">ralewayreg.ttf</string>
+    <string name="font_ralewayextrabold" translatable="false">ralewayextrabold.ttf</string>
+    <string name="font_questrialregular" translatable="false">questrialregular.ttf</string>
+    <string name="font_montserratmedium" translatable="false">montserratmedium.ttf</string>
+    <string name="font_opensansitalicsemibold" translatable="false">opensansitalicsemibold.ttf</string>
+
+    <!-- Login page values -->
+    <string name="user_name_or_email">Username or Email</string>
+    <string name="password">Password</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="login_Sign_in_later">Sign in later</string>
+    <string name="phone_login_sigin_signup">sign in / sign up</string>
+    <string name="phone_signin">sign in</string>
+    <string name="phone_login_signup">sign up</string>
+    <string name="phone_login_message">Please enter your phone number</string>
+    <string name="phone_login_message_has_account">This number has been registered.\nSign with your password.</string>
+    <string name="phone_signup_message">Please enter the verification code we\'ve\n just sent to %s</string>
+    <string name="phone_signup_new_password_messsage">Enter a password for your new account.</string>
+    <string name="phone_signup_new_password_messsage_2">Enter a new password</string>
+    <string name="phone_signup_new_password_tips">Password should be 6~20 characters.</string>
+    <string name="dont_receive_virification_code">Didn\'t receive the code</string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="password_hint">Enter password</string>
+    <string name="verification_code_hint">Enter verification code</string>
+    <string name="next">next</string>
+    <string name="resend_in_count_down">resend (%d)</string>
+    <string name="resend_fixed_60s">resend (60)</string>
+    <string name="resend">resend</string>
+    <string name="verify">verify</string>
+    <string name="phone_verify_title">Sign up with %s</string>
+    <string name="phone_signin_verify_message">This number has not been registered yet. Tap \'Verify\' to send a
+        verification code to this number
+    </string>
+    <string name="phone_signin_invalid_code_message">Invalid code. Tap \'Resend\' if you need a new code.</string>
+    <string name="phone_signin_incorrect_password">Incorrect password entered.</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="reset_password">reset password</string>
+    <!--<string name="send_verification_code">send verification</string>-->
+    <string name="reset_password_message">Reset your password by entering\nthe verification sent to this number.
+    </string>
+    <!--<string name="phone_login_user_id_default">belive</string>-->
+    <integer name="max_password_length">20</integer>
+    <!-- Forgot password page values -->
+
+    <!-- Sign up page values -->
+    <string name="user_name">Username</string>
+    <string name="activity_sign_unknown_error">An unknown error. Please try again !</string>
+
+    <!-- Let's Start  -->
+
+
+    <!-- Image Select popup values -->
+    <!--<string name="photo_library">Photo Library</string>-->
+    <string name="camera">Camera</string>
+    <string name="btn_text_cancel">Cancel</string>
+    <string name="btn_text_ok">OK</string>
+    <string name="btn_text_done">Done</string>
+    <string name="btn_text_wait">Wait</string>
+    <string name="btn_text_close_stream">Close Stream</string>
+    <string name="choose_from_library">Library</string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+
+    <!-- Edit profile page values -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_pro_dbo">Date of Birth</string>
+    <string name="edit_pro_avatar">Avatar</string>
+    <string name="edit_pro_display_name">Display Name</string>
+    <string name="edit_pro_id_name">ID Name</string>
+    <string name="edit_pro_gender">Gender</string>
+    <string name="edit_pro_gender_male">Male</string>
+    <string name="edit_pro_gender_female">Female</string>
+    <!--<string name="edit_pro_gender_secret">Secret</string>-->
+    <string name="edit_pro_biography">Biography</string>
+    <string name="edit_pro_birthday">Birthday</string>
+    <string name="edit_pro_save">Save</string>
+    <string name="edit_pro_display_name_validation">Limit to 3 ~ 16 characters.</string>
+    <string name="edit_pro_error_unselected_gender">Please select your gender</string>
+
+    <string name="edit_pro_quote_hind">Update your status</string>
+
+    <!-- Home page values -->
+    <!--<string name="KM" translatable="false">Km</string>-->
+    <string name="search_new_user">Search</string>
+    <string name="km_default">-- Km</string>
+    <!--<string name="home_live">Live</string>-->
+    <!--<string name="home_feed">Feed</string>-->
+    <string name="search_title">Search username</string>
+
+    <!--daily login-->
+    <string name="daily_treat_message">Nice! you\'ve got…</string>
+    <string name="daily_treat_message_ultimate">WOW! You\'re a winner!</string>
+    <string name="open_it">open it</string>
+    <string name="daily_treat_result_message">You opened the box and found…</string>
+    <string name="daily_treat_result_message_already_claimed">You\'ve already claimed a treat today!</string>
+    <string name="claim">claim</string>
+    <string name="claim_later">later</string>
+    <string name="daily_treat_reopen_in">Come back in %s for a new treat</string>
+    <string name="daily_treat_share_message">Tell your friends all about it!</string>
+    <string name="daily_treat_share_content">I have won %1$,d %2$s! Come join in the fun with me on BeLive!</string>
+
+    <!--search screen-->
+    <string name="facebok_friends">Facebook Friends</string>
+
+    <!-- User Profile page values -->
+    <string name="profile_header">PROFILE</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="stars">stars</string>
+
+    <string name="profile_follow">Following</string>
+    <!--<string name="profile_me">Me</string>-->
+    <string name="pop_up_option">Select Option</string>
+    <string name="pop_up_follow_user">Follow User</string>
+    <string name="pop_up_unfollow_user">Unfollow User</string>
+    <string name="follow_us">Follow us</string>
+
+    <!-- User Profile page POPUP values -->
+    <string name="btn_text_yes">Yes</string>
+    <string name="btn_text_no">No</string>
+    <string name="are_you_sure_to_proceed">Are you sure you want to proceed?</string>
+
+    <!-- Photos page values -->
+    <string name="do_you_want_to_delete_this_post">Do you want to delete this post?</string>
+    <string name="do_you_want_to_delete_this_stream">Do you want to delete this recorded stream?</string>
+    <!-- News Feed page values -->
+    <string name="profile_post_not_of_me">This post is not belong to you</string>
+    <string name="newsfeed_menu_del_post">Delete post</string>
+    <string name="newsfeed_menu_del_challenge">Delete challenge</string>
+    <string name="newsfeed_menu_edit_post">Edit post</string>
+    <string name="newsfeed_menu_unfolow">Unfollow</string>
+    <string name="newsfeed_menu_repost">Report</string>
+    <string name="newsfeed_menu_unrepost">UnReport</string>
+    <string name="newsfeed_like_count_text">likes</string>
+    <string name="newsfeed_like_count_is_one">like</string>
+    <string name="newsfeed_btn_live">LIVE</string>
+    <string name="newsfeed_menu_edit_challenge">Edit Challenge</string>
+    <string name="newsfeed_menu_unreport_challenge">UnReport</string>
+    <string name="newsfeed_menu_del_submission">Delete submission</string>
+
+    <!-- Slider page values -->
+    <string name="messages">Messages</string>
+    <string name="transactions_slider">Pocket</string>
+    <string name="setting_slider">Settings</string>
+    <string name="personal_leaderboard_slider">Leaderboard</string>
+    <string name="daily_treats">Daily Treats</string>
+    <string name="invite_a_friend_slider">Invite a Friend</string>
+    <string name="logout_slider">Log Out</string>
+    <!--<string name="nav_suggested_friend_list">Suggested Friend</string>-->
+    <string name="login_slider">LogIn</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+
+    <!-- Message page values -->
+    <string name="write_a_message">Write a message</string>
+
+    <!-- Chat page values -->
+    <string name="chat_camera">Camera</string>
+    <string name="chat_video">Video</string>
+
+    <!-- Leaderboard Page values -->
+
+    <!-- Settings page values -->
+    <string name="settings_bold">Setting</string>
+
+    <!-- Setting PopUp values -->
+    <string name="select_a_picture_from">Select a picture from</string>
+    <string name="select_a_videos_from">Select a videos from</string>
+    <string name="select_a_stream_cover_from">Select your stream cover photo from</string>
+    <string name="view_more">View More</string>
+    <string name="more">more</string>
+    <string name="less">less</string>
+    <string name="topfan_more">More</string>
+
+    <!-- Write A Post Page Values -->
+    <string name="add_descriptions">Write a caption…</string>
+    <string name="check_in_your_location_bold">Check in location</string>
+    <string name="please_enter_description">Please enter a caption</string>
+    <string name="post_video">Video</string>
+    <string name="post_quotes">Quote</string>
+    <string name="post_photo">Photo</string>
+    <string name="post_discard_current_post">Discard current post?</string>
+    <string name="post_btn_Discard">Discard</string>
+
+    <!-- Send A Gift page values -->
+    <string name="sendgift_no_choose_gift">Please select a gift.</string>
+    <string name="sendgift_no_enough_bean">You have insufficient gems.</string>
+
+
+    <!-- Invite page values -->
+    <string name="invite_bold">Invite Friends</string>
+    <string name="invite_phone_number_email">Input multi email friend with \';\'</string>
+    <string name="invite_someone_to_appster">Invite your friends to join BeLive</string>
+    <string name="invite_your_referral_id">Your Referral Code</string>
+    <string name="share_your_referral_code">Share your referral code</string>
+    <string name="share_referral_code">Share referral code</string>
+    <string name="invite_not_input_email">Please enter a valid email address.</string>
+    <string name="invite_send_to_self">You can\'t send yourself</string>
+    <string name="invite_sns_message">Good things must share: %s with me and Be Rewarded! Here’s my referral code -
+        %s
+    </string>
+    <string name="invite_sns_trivia_message">Use my referral code and we\'ll both get an extra chance for Master Brain -
+        the Live Trivia Game Show where we win CASH daily! Here’s my referral code - %s
+    </string>
+    <string name="invite_mail_subject">You and me on BeLive!</string>
+    <!-- notification -->
+    <string name="notification_you">You</string>
+    <string name="notification">Notification</string>
+    <string name="notification_following">Following</string>
+
+    <!-- postcomment -->
+    <string name="comment">Comments</string>
+
+    <!--Streaming>-->
+    <string name="app_fail_login_live_Stream">Fail Login live stream</string>
+    <string name="app_fail_get_config_amazon_live_Stream">Fail get config live stream</string>
+    <string name="number_view">viewers</string>
+    <string name="hint_name_your_stream">Name your stream</string>
+    <string name="hint_add_title">Add a title</string>
+    <string name="number_here_view" formatted="false">%s views / %s</string>
+    <string name="just_send_gift">sent a %s!</string>
+    <string name="chat_box_live_commerce_suggestion">Go Shopping!</string>
+    <string name="viewer">viewer</string>
+    <string name="viewers">viewers</string>
+    <string name="live_commerce_announcement_message">is placing an order.</string>
+
+    <string name="like_this">Like this</string>
+    <string name="low_network_message">Your network connection seems to be unstable. Please use WiFi or move to an area
+        with better network quality
+    </string>
+    <string name="record_instruction">Post your video so that\npeople can watch it back.</string>
+    <string name="record_instruction_below_one_minute">To record and post a video,\nit must be at least 1 minute long.
+    </string>
+    <string name="delete_confirm_message">Are you sure you want to delete this video?</string>
+    <string name="delete_confirm_title">Delete Video?</string>
+    <string name="saved">Saved</string>
+    <string name="deleted">Deleted</string>
+    <string name="delete">delete</string>
+    <string name="save">save</string>
+    <string name="stream_pause">Broadcaster will be back \n in a moment!</string>
+    <string name="enter_the_water_mask">enter text</string>
+    <integer name="stream_title_max_length">32</integer>
+
+    <string name="tutorial_face_sticker">Select a Face sticker\nfor more fun!</string>
+    <string name="tutorial_sns_host">Invite your friends to\nwatch your livestream!</string>
+    <string name="tutorial_sns_viewer">Share this livestream\nand watch it with friends!</string>
+    <string name="tutorial_stream_title">Add some text to\nyour livestream!</string>
+    <string name="tutorial_send_gift_viewer">Send gifts to livestreamers\nand watch how they react!</string>
+    <string name="tutorial_chat_viewer">Type here to start chatting!</string>
+    <plurals name="open_permission_setting_explanation">
+        <item quantity="one">To perform this action, you need to grant \'%1$s\' permission</item>
+        <item quantity="other">To perform this action, you need to grant \'%1$s\' permissions</item>
+    </plurals>
+    <string name="permission_camera" translatable="false">Camera</string>
+    <string name="permission_record_audio" translatable="false">Microphone</string>
+    <string name="permission_storage" translatable="false">Storage</string>
+    <string name="permission_location" translatable="false">Location</string>
+
+    <!--live commerce-->
+    <string name="shop">SHOP</string>
+    <string name="promo_code">Promo code</string>
+    <string name="order_now">order now</string>
+    <string name="copied">Copied</string>
+
+    <!--XMPP Create Accoutn Error-->
+    <!--Trending>-->
+    <string name="trending_this_week">This Week</string>
+    <string name="trending_this_month">This Month</string>
+    <string name="trending_all_time">All Time</string>
+    <!--Trim videos -->
+    <string name="trim_videos">Trim Videos</string>
+    <string name="support_mp4">Support mp4 only</string>
+    <string name="fail_to_load_video">failed to load video</string>
+    <string name="mp4_extention">.mp4</string>
+
+    <string name="reduce_videos_quality_process">Optimize videos size</string>
+    <string name="please_wait">PLease wait…</string>
+
+    <!-- Refill page values -->
+    <string name="refill_percen">%</string>
+
+    <string name="refill_usd">$%s</string>
+
+    <string name="refill_cny">¥%s</string>
+    <string name="refill_title">GEMS</string>
+    <string name="gem_menu">Gems</string>
+    <string name="start_menu">Stars</string>
+    <string name="refill_balance">Balance :</string>
+    <string name="profile_menu">Profile</string>
+    <string name="loyalty_menu">Loyalty</string>
+    <string name="celeb_menu">Celeb-Auction</string>
+    <string name="nav_reward">Rewards</string>
+    <string name="gacha_menu">Gacha</string>
+
+    <string name="refill_invite_and_get">Invite &amp; Get &#032;&#032; &#032; &#032; &#032; &#032; 2 &#032;</string>
+
+    <!-- Error values -->
+    <string name="system_error">System Error</string>
+    <string name="parameter_missing">Parameter missing</string>
+    <string name="model_state_error">Model state error</string>
+    <string name="account_deactivated_or_suspended">Account deactivated or suspended</string>
+    <string name="account_deactivate_or_invalid_email">Account deactivate or invalid email</string>
+    <string name="insufficient_gold">Insufficient gold</string>
+    <string name="email_has_already_been_verified">Email has already been verified</string>
+    <string name="invalid_data">Invalid data</string>
+    <string name="invalid_user_id">Invalid user id</string>
+    <string name="filter_is_invalid">Filter is invalid</string>
+    <string name="media_type_is_invalid">Media type is invalid</string>
+    <string name="invalid_login_credentials">Invalid login credentials</string>
+    <string name="out_of_length_bound">Out of length bound</string>
+    <string name="invalid_datetime">Invalid datetime</string>
+    <string name="invalid_data_type">Invalid data type</string>
+    <string name="invalid_email_format">Invalid email format</string>
+    <string name="message_content_missing">Message content missing</string>
+    <string name="email_is_missing">Email is missing</string>
+    <string name="display_name_is_missing">Display name is missing</string>
+    <string name="invalid_device_type">Invalid device type</string>
+    <string name="invalid_credit_type">Invalid credit type</string>
+    <string name="invalid_post_id">Invalid post id</string>
+    <string name="invalid_follower_id">Invalid follower id</string>
+    <string name="invalid_owner_id">Invalid owner id</string>
+    <string name="invalid_report_user_id">Invalid report user id</string>
+    <string name="invalid_notification_status">Invalid notification status</string>
+    <string name="invalid_save_push_notification_id">Invalid save push notification_id</string>
+    <string name="invalid_receiver_id">Invalid receiver id</string>
+    <string name="invalid_user_role">Invalid user role</string>
+    <string name="invalid_referral_id">Invalid referral id</string>
+    <string name="dob_is_out_of_accepted_age_range">Dob is out of accepted age range</string>
+    <string name="missing_required_data">Missing required data</string>
+    <string name="email_already_existed">Email already exists.</string>
+    <string name="not_exist">Not exist</string>
+    <string name="data_has_been_deleted">Data has been deleted</string>
+    <string name="missing_paypal_email">Missing paypal email</string>
+    <string name="missing_account_number">Missing account number</string>
+    <string name="missing_branch_code">Missing branch code</string>
+    <string name="missing_bank_name">Missing bank name</string>
+    <string name="username_has_been_used">Username has been used</string>
+    <string name="email_has_been_used">Email has been used</string>
+    <string name="no_data_found">No data found</string>
+    <string name="user_not_found">User not found</string>
+    <string name="no_page_found">No page found</string>
+    <string name="transaction_info_not_found">Transaction info not found</string>
+    <string name="update_fail">Update fail</string>
+    <string name="create_fail">Create fail</string>
+    <string name="delete_fail">Delete fail</string>
+    <string name="can_not_edit_comment">Can not edit comment</string>
+    <string name="can_not_create_comment">Can not create comment</string>
+    <string name="can_not_delete_comment">Can not delete comment</string>
+    <string name="can_not_create_post">Can not create post</string>
+    <string name="can_not_update_post">Can not update post</string>
+    <string name="can_not_delete_post">Can not delete post</string>
+    <string name="can_not_delete_conversation">Can not delete conversation</string>
+    <string name="save_cashback_error">Save cashback error</string>
+    <string name="send_receive_gift_error">Send receive gift error</string>
+    <string name="unauthorized">Unauthorized</string>
+    <string name="user_rejected">User rejected</string>
+    <string name="not_in_leaderboard">Not in leaderboard</string>
+    <string name="post_not_belong_to_user">Post not belong to user</string>
+    <string name="can_not_send_email">Can not send email</string>
+    <string name="self_communication">Self communication</string>
+    <string name="account_authentication_problem">Your token is invalid. Please try to login again</string>
+    <string name="Media_content_type_is_not_support">Media content type is not support</string>
+    <string name="Transaction_Error">Transaction Error</string>
+    <string name="Register_Xmpp_accrount_failed">Register Xmpp account failed</string>
+    <string name="Referral_ID_already_exist">Referral ID already exist</string>
+    <string name="Email_has_been_used_with_another_facebook_id">Email has been used with another facebook id</string>
+    <string name="User_does_not_have_any_email">User does not have any email</string>
+    <string name="Error_Email_has_not_been_verified">Email has not been verified</string>
+    <string name="Already_like_that_post">Already like that post</string>
+    <string name="Stream_already_exists">Stream already exists</string>
+    <string name="Request_cashback_fail">Request cashback fail (should retry)</string>
+    <string name="User_turn_off_chat">User turn off chat</string>
+    <string name="Notification_not_belong_to_user">Notification not belong to user</string>
+    <string name="Can_not_upload_media_content">Can not upload media content</string>
+    <string name="can_not_play_video" translatable="false">Can not play video</string>
+
+
+    <!-- Setting -->
+    <string name="setting_title_notifications">Notifications</string>
+    <string name="setting_notifications">Notifications</string>
+    <string name="setting_live_notification">Live Notification</string>
+    <string name="setting_notification_sound">Notification Sound</string>
+    <string name="setting_hide_message_details">Hide Message Details</string>
+    <string name="setting_Searchable">Searchable</string>
+    <string name="setting_Messaging">Messaging</string>
+    <string name="setting_Language">Language</string>
+    <string name="setting_Profile">Profile</string>
+    <string name="setting_playtoken_connect">Connect to PLAYTOKEN</string>
+    <string name="setting_playtoken_connected">Connected to PLAYTOKEN</string>
+    <string name="setting_Edit_Profile">Edit Profile</string>
+    <string name="setting_blocked_list">Blocked List</string>
+    <string name="setting_Connect_to_Facebook">Connect to Facebook</string>
+    <string name="setting_Support">Support</string>
+    <string name="setting_About_Us">About Us</string>
+    <string name="setting_Redemption">Redemption Code</string>
+    <string name="setting_Terms_And_Conditions">Terms And Conditions</string>
+    <string name="setting_Deactivate_Account">Deactivate Account</string>
+    <string name="setting_confirm_Deactivate_Account">Do you want Deactivate Account</string>
+    <string name="setting_title_choose_language">SELECT A LANGUAGE</string>
+    <string name="setting_Disconnect_facebook">Disconnect to Facebook</string>
+    <string name="setting_Do_you_disconnect_facebook">Do you want to disconnect Facebook ?</string>
+    <string name="setting_check_update">Check Updates</string>
+    <string name="setting_version">Version %s</string>
+    <string name="setting_has_already_newest_version">You already have the latest version installed</string>
+
+
+    <!--Pocket>-->
+    <string name="pocket_title">Pocket</string>
+    <string name="pocket_Current_Balance">Current Balance</string>
+    <string name="pocket_Beans">Beans</string>
+    <string name="pocket_View_your_transaction_history">View your transaction history.</string>
+    <string name="pocket_USD">Gold</string>
+    <string name="pocket_Date">Date</string>
+    <string name="pocket_Remark">Remark</string>
+    <string name="pocket_Total">Total</string>
+    <string name="pocket_In">In/Out</string>
+    <string name="pocket_DescripBteioan">Description/Date</string>
+    <string name="pocket_Current">Current</string>
+    <string name="pocket_to">to</string>
+    <string name="pocket_start_date_over_current">Start date must not over current</string>
+
+    <!--Social-->
+
+    <string name="social_sucess">Successful</string>
+
+    <!--Block Message>-->
+    <!--Gift receive store-->
+    <string name="gift_receive_Received">Received</string>
+    <string name="gift_receive_Sent">Sent</string>
+
+    <!--Post detail>-->
+    <string name="post_detail_title">Posts</string>
+
+    <string name="Please_click_back_again_to_exit">Please tap back again to exit</string>
+
+    <!--Time>-->
+    <string name="time_just_now">just now</string>
+    <string name="time_a_minute_ago">1 minute ago</string>
+    <string name="time_minutes_ago">minutes ago</string>
+    <string name="time_an_hour_ago">1 hour ago</string>
+    <string name="time_hours_ago">hours ago</string>
+    <string name="time_yesterday">yesterday</string>
+    <string name="time_days_ago">days ago</string>
+    <string name="time_year_ago">years ago</string>
+    <string name="time_month_ago">months ago</string>
+    <string name="time_day_ago">1 day ago</string>
+
+    <string name="time_an_month_ago">1 month ago</string>
+    <string name="time_an_year_ago">1 year ago</string>
+
+    <string name="time_a_week_ago">1 week ago</string>
+    <string name="time_weeks_ago">weeks ago</string>
+    <!-- For Record Pic/Videos activity -->
+    <!--<string name="recording">recording&#8230;</string>-->
+
+    <string name="create_profile_btn_next">GET STARTED!</string>
+    <string name="create_profile">Create a Profile</string>
+    <string name="create_profile_enter_email">Enter your email address.</string>
+    <string name="create_profile_please_input_your_username">Please input your username</string>
+    <string name="create_profile_please_input_email">Please input your email.</string>
+    <string name="newsfeed_btn_video">VID</string>
+
+    <!--Login Play Token -->
+    <string name="play_token_register">Register</string>
+    <string name="login_playtoken_please_input_your_username_">Please input your username</string>
+    <string name="login_playtoken_please_input_your_password">Please input your Password</string>
+    <string name="register_playtoken_username_range">Username minimum 3 characters required and maximum 16 characters
+        long
+    </string>
+
+    <string name="register_playtoken_password_range">Password minimum 6 characters required and maximum 15 characters
+        long
+    </string>
+    <string name="register_playtoken_re_enter_Email_hint">Your Email (Optional)</string>
+    <string name="register_playtoken_re_enter_Referer_hint">Referer Number (Optional)</string>
+    <string name="register_not_number">Must numeric</string>
+    <string name="register_playtoken_re_enter_user_name_hint">Your Username</string>
+
+    <string name="live_trim_go_live">BE LIVE</string>
+    <!--<string name="live_trim_saved_video">Save video</string>-->
+    <!--<string name="live_trim_record">Record</string>-->
+    <!--<string name="live_trim_not_recorded">Not Recorded</string>-->
+    <string name="not_data_following">You are currently not following any BeLivers. Check out the popular shows here:
+    </string>
+    <string name="write_post_share_Facebook">Facebook</string>
+    <string name="write_post_share_Instagram">Instagram</string>
+    <string name="number_view_is_one">viewer</string>
+    <string name="gift_title">Gifts</string>
+    <string name="profile_following_title">Following</string>
+    <string name="profile_followers_title">Followers</string>
+    <string name="chat_gift">Gift</string>
+
+    <!-- Array String color -->
+
+    <string name="home_type_sport">Sports</string>
+    <string name="home_type_fashion">Fashion</string>
+    <string name="home_type_games">Games</string>
+
+    <string name="header_title_share_post" formatted="false">Check out this %s %s by %s\n</string>
+
+    <string name="header_title_share_stream_viewer" formatted="false">%s @%s\nCome join in the fun with me on BeLive!
+        :)
+    </string>
+
+    <string name="header_title_share_stream_host" formatted="false">%s @%s\nI’m on LIVE! Come join in the fun with me on
+        BeLive! :)
+    </string>
+
+
+    <string name="share_live_facebook">Facebook</string>
+    <string name="share_live_instagram">Instagram</string>
+    <string name="share_live_others">Others</string>
+    <string name="share_live_twitter">Twitter</string>
+    <string name="share_live_whatsapp">WhatsApp</string>
+    <string name="share_live_email">Email</string>
+    <string name="share_live_wechat">WeChat</string>
+    <string name="share_live_weibo">Weibo</string>
+    <string name="share_live_share">Share</string>
+    <string name="share_no_instagram_app">Instagram is not installed on this device</string>
+    <string name="share_instagram_not_share_text">You can only share a photo or video</string>
+    <string name="share_live_copy_link">Copy Link</string>
+    <string name="share_link_copied">Link copied</string>
+
+    <string name="post_updating">Updating</string>
+    <string name="post_post_updated">Post updated</string>
+    <string name="post_sharing">sharing</string>
+    <string name="post_share_facebook_success">Your post has been shared to Facebook</string>
+    <string name="share_no_twitter_app">Twitter is not installed on this device</string>
+    <string name="stream_share_facebook_success">Your stream has been shared to Facebook</string>
+
+    <string name="stream_share_twitter_success">Your stream has been shared to Twitter</string>
+
+    <string name="report_sexual_content">Sexual content</string>
+    <string name="report_violent">Violent or repulsive content</string>
+    <string name="report_hateful">Hateful or abusive content</string>
+    <string name="report_harmful">Harmful dangerous acts</string>
+    <string name="report_child">Child abuse</string>
+    <string name="report_spam">Spam or misleading</string>
+    <string name="report_infringes">Infringes my rights</string>
+    <string name="report_what_issue">Report Reason</string>
+
+    <string name="report_user">Report User</string>
+    <string name="live_stream_ended">Live Ended</string>
+
+    <string name="message_do_you_want_to_delete_message">Do you want to delete message?</string>
+
+    <string name="gift_has_been_sent_successfully">Gift has been sent successfully</string>
+    <string name="your_post_has_delete">Delete successful</string>
+    <string name="intivite_friend_successful">Invitation sent.</string>
+
+    <string name="please_input_display_name">Please input your display name</string>
+
+    <string name="live_stream_category">Category</string>
+
+    <string name="gift_refill_more_dialog_title">Insufficient gems</string>
+    <string name="gift_refill_more_dialog_message">Do you want to purchase more</string>
+    <string name="home_find_out">find out</string>
+    <string name="home_event">Event</string>
+
+    <string name="login_by_signing_up">By signing up, you agree to our</string>
+
+    <string name="login_terms">Terms</string>
+    <string name="login_and">&amp;</string>
+    <string name="login_privacy_policy">Privacy Policy</string>
+    <string name="login_dot">.</string>
+
+    <string name="message_do_not_have_permission_create_stream">Your account has been suspended. Please contact BeLive
+        team for more information.
+    </string>
+
+    <string name="message_stream_remove">This stream has been removed.</string>
+    <string name="invite_friend_send">Send Invite</string>
+    <string name="please_contact_appsters_team">Your account has been suspended. Please contact BeLive team to
+        reactivate.
+    </string>
+    <string name="whatsapp_have_not_been_installed">Whatsapp have not been installed.</string>
+    <string name="wechat_have_not_been_installed">WeChat has not been installed.</string>
+    <string name="weibo_have_not_been_installed">Weibo has not been installed.</string>
+
+    <string name="you_have_no_conversation">You have no conversation</string>
+    <string name="start_capturing_and_share_your_moments">Start capturing and share your moments</string>
+    <string name="leaderboard_there_are_no_activity">There are no activity</string>
+    <string name="notification_no_notification">No notification</string>
+    <string name="you_did_not_receive_any_gift">You did not receive any gift</string>
+    <string name="do_you_want_stop_record">Do you want cancel record videos ?</string>
+    <string name="member_doesnot_want_to_receive_message">This member doesn\'t want to receive message at this time
+    </string>
+    <string name="home_try_again">Try again</string>
+    <string name="some_error_happen_please_try">An error occurred. Please try again later.</string>
+    <string name="error_title">Error</string>
+    <string name="check_your_connection">Check your connection and try again.</string>
+    <string name="income_menu">Income</string>
+    <string name="income_what_are_stars">What are Stars ?</string>
+    <string name="income_start_to_cash">Convert to gems</string>
+    <string name="income_start_to_gem">Exchange Rewards</string>
+    <string name="income_stars_to_sgd">&#032; &#032; &#032; &#032; &#032; &#032; 2 &#032;</string>
+    <string name="income_start_are_ear">Stars are earned when your fans send gifts to you. The more you have, means the
+        more popular you are! These Stars can be converted to Gems or be withdrawn as rewards.
+    </string>
+    <string name="income_what_are_gems">What are Gems ?</string>
+    <string name="income_gems_enable">Gems enables you to buy gifts for your favourite broadcasters, allowing them to
+        give you more attention as they acknowledge you as their top fans (To send gifts, you can go to their Profile
+        page or their livestreams).
+    </string>
+    <string name="income_exchange_rate_tips">Exchange Rate Tips</string>
+    <string name="income_exchange_tips_sgd">1000 = SGD 1.5</string>
+
+    <string name="income_sgd">≈ $%s</string>
+
+
+    <string name="exchange_confirm_title">Are you sure?</string>
+    <string name="stars_to_gems_exchange_confirm_exchange">Convert</string>
+    <string name="exchange_confirm_to">to</string>
+    <string name="exchange_success">Success!</string>
+    <string name="stars_to_gems_exchange_have_added">have been added.</string>
+    <string name="exchange_oops">Sorry!</string>
+    <string name="stars_to_gems_exchange_not_enough_gold">Not enough Stars available.</string>
+    <string name="feature_will_be_coming_soon">Feature coming soon!</string>
+
+    <string name="stream_end_stream_home_btn">HOME</string>
+    <string name="stream_end_stream_viewer_count">Viewers</string>
+    <string name="stream_end_stream_likes_count">Likes</string>
+    <string name="stream_end_stream_stars_count">Stars</string>
+    <string name="stream_stars_from_fan">stars from fans</string>
+    <string name="toppan_title">Top Fans</string>
+    <string name="toppan_have_not_fan">Nothing here.</string>
+
+    <!--<string name="search_header_suggested">@string/suggested</string>-->
+    <string name="search_header_recent">Recent</string>
+    <string name="streaming_recorded">REC</string>
+    <string name="streaming_live">LIVE</string>
+    <string name="streaming_recorded_live_toast">Recorded Live</string>
+
+    <string name="likes_title">Likes</string>
+    <string name="newsfeed_menu_del_stream">Delete</string>
+    <string name="newsfeed_menu_share_stream">Share</string>
+    <string name="stream_disclaimer">Welcome!\nWe will permanently ban users with content showing nudity, pornography
+        and related sexual acts, prostitution, gambling, smoking, bullying and other illegal acts.
+    </string>
+    <string name="recorded_stream_has_been_deleted">This recorded stream has been deleted by the owner</string>
+    <string name="btn_text_update">UPDATE</string>
+
+    <string name="search_user">User</string>
+    <string name="search_latest_live">Latest Live</string>
+    <string name="search_no_stream">No live stream at the moment</string>
+
+    <string name="start_stream_poor_connection">Poor connection may affect the stream quality, please ensure you have a
+        good connection.
+    </string>
+    <!-- Item Wall Feed -->
+    <string name="started_xx_ago" formatted="false">Started %s</string>
+    <string name="view_count" formatted="false">%s view</string>
+    <string name="views_count" formatted="false">%s views</string>
+    <string name="like_count" formatted="false">%s like</string>
+    <string name="likes_count" formatted="false">%s likes</string>
+    <string name="view_all_for" formatted="false">View all %s comments</string>
+    <string name="videos_tag">VID</string>
+
+    <string name="wall_feed">FEED</string>
+    <string name="display_name_required">Please input display name</string>
+    <string name="user_id_required">Please input your ID</string>
+    <string name="characters_range" formatted="false">Please use between %s and %s characters</string>
+    <string name="share_with_friend">Share with friends</string>
+    <string name="register_your_id">example123</string>
+    <!--<string name="register_your_display_name">YOUR DISPLAY NAME</string>-->
+    <!--<string name="register_email_optional">EMAIL (OPTIONAL)</string>-->
+    <!--<string name="register_referral">REFERRAL CODE (OPTIONAL)</string>-->
+    <string name="register_create_your_profile">CREATE YOUR PROFILE</string>
+    <string name="register_your_bold">YOUR</string>
+    <string name="register_begin">REGISTER</string>
+    <string name="register_duplicated_id">This ID is already taken.</string>
+    <string name="user_has_been_suspended">User has been suspended</string>
+    <string name="search_no_users_found">No user found</string>
+    <!--<string name="search_title_explore">EXPLORE</string>-->
+    <string name="add_tag">Add Tag</string>
+
+    <string name="chat_with_everyone">Chat with everyone</string>
+    <string name="stream_end_stream_profile_btn">PROFILE</string>
+    <string name="stream_end_share_achievements">Share achievements</string>
+
+    <string name="string_stop">Stop</string>
+    <string name="string_block">Block</string>
+    <string name="string_mute">Mute</string>
+    <string name="string_ban">Ban</string>
+    <string name="string_hide">Hide</string>
+    <string name="string_unhide">Unhide</string>
+    <string name="string_unmute">Unmute</string>
+    <string name="string_unblock">Unblock</string>
+    <string name="stars_received">Total received</string>
+    <string name="topfan_sent">sent</string>
+    <string name="silder_menu_balance">Balance :</string>
+    <string name="income_start_received">Stars available</string>
+    <string name="picture">Picture</string>
+    <string name="chat_empty_holder_message">Nothing here. \n Why not start the chat?</string>
+    <string name="convert_to_gem_gem_on_hand">Available Gems:</string>
+    <string name="friend_already_on_belive">Friend already on BeLive</string>
+    <string name="report_toast_message">Report submitted. We will review and process your report.</string>
+
+    <!--blocked screen-->
+    <string name="blocked_screen_title">Blocked List</string>
+    <string name="exchange_dialog_sure">SURE</string>
+    <string name="block_this_user">Block this user?</string>
+    <string name="unblock_this_user">Unblock this user?</string>
+    <string name="block_confirmation_content">Once you block someone, that person can no longer view your challenge
+        and posts, nor receive any notifications from you even as a follower.
+    </string>
+    <string name="unblock_confirmation_content">This user will be allowed to view your posts and receive notifications
+        from you.
+    </string>
+    <string name="no_post_found">Post not found</string>
+    <string name="share_end_result_message">Come join in the fun with me on BeLive! :)</string>
+    <string name="these_emails_has_been_invited">These emails has been invited:</string>
+    <string name="these_emails_has_been_blocked">These emails has been blocked:</string>
+    <string name="these_emails_has_been_invalid">These emails has been invalid:</string>
+    <string name="friends_already_on_belive">Friend(s) already on BeLive</string>
+    <string name="are_you_sure_you_want_to_end_this_stream">Are you sure you want to end this stream ?</string>
+    <string name="end_stream">End Stream</string>
+    <string name="paypal_firstname">FIRST NAME</string>
+
+    <string name="paypal_lastname">LAST NAME</string>
+
+    <string name="paypal_email">PAYPAL EMAIL</string>
+
+    <string name="paypal_mobile_num">MOBILE NUMBER</string>
+
+    <string name="dont_have_paypal_account">Don\'t have a PayPal account?</string>
+
+    <string name="submit">Submit</string>
+    <string name="create_account">Create account</string>
+    <string name="not_enought_stars">There are not enough %s available</string>
+
+    <string name="not_enought_stars_pre">There are not enough</string>
+    <string name="not_enought_stars_post">available</string>
+    <string name="btn_text_sure">Sure</string>
+    <string name="all_fields_required">All fields are required to be filled in.</string>
+
+    <string name="enter_valid_paypal_email">Please enter a valid PayPal email.</string>
+
+    <string name="enter_valid_phone_number">Please enter a valid mobile number.</string>
+
+    <string name="withdrawn_successfully">Successfully sent</string>
+
+    <string name="confirm_cashout">Confirm cash transfer</string>
+
+    <string name="sns_default_message">Watch this amazing BeLive broadcast! #BeLiveSG</string>
+
+    <string name="sns_facebook_message">Watch this amazing BeLive broadcast! #BeLiveSG http://belive.sg/fb</string>
+
+    <string name="btn_text_confirm">Confirm</string>
+    <string name="error_start_stream">Error start stream</string>
+    <string name="invite_friend_award">Get your friends onboard BeLive and \nBOTH of you will receive :gem: 100</string>
+
+    <string name="network_error">Network error</string>
+    <string name="network_unstable_error_message">Connection is unstable. Please retry.</string>
+
+    <string name="newly_registered_user_title">Welcome to BeLive</string>
+    <string name="newly_registered_user">We do not condone behaviour and content showing nudity, pornography and related
+        sexual acts, prostitution, gambling, bullying and smoking on our community. Violators will be banned
+        permanently.\n\nLet’s make the experience enjoyable for everyone!
+    </string>
+    <string name="hot_network_is_low">Streamer\'s network is low</string>
+    <string name="stream_network_unstable">This stream’s network is unstable. Do you want to wait?</string>
+    <string name="send_gift_combo" formatted="false">sent %s</string>
+    <plurals name="gifts">
+        <item quantity="one">sent a %s!</item>
+        <item quantity="other">sent %s</item>
+    </plurals>
+    <string name="viewer_network_is_low">Network is low</string>
+    <string name="copy_this_text">Copy text</string>
+    <string name="text_copied">Text copied</string>
+
+    <string name="message_get_access_token">Get access token …</string>
+    <string name="message_is_lived_now">is Live now.</string>
+    <string name="message_joined">joined</string>
+    <string name="message_followed">followed %s!</string>
+    <string name="message_sent">sent</string>
+    <string name="message_sent_a">sent a</string>
+    <string name="message_sent_a_item">sent a %s!</string>
+    <string name="message_received_end_message">Received end message</string>
+    <string name="message_check_network">Checking network…</string>
+    <string name="message_prepare_stream">Preparing stream…</string>
+    <string name="message_beauty_on">Beauty on</string>
+    <string name="message_beauty_off">Beauty off</string>
+    <string name="message_network_not_good">Network not good!</string>
+    <string name="message_select_cate">Select a Category to describe your Live</string>
+
+    <string name="error_auth_failed">Authorization failed</string>
+
+    <string name="tag_hot">Hot</string>
+    <string name="tag_entertainment">Entertainment</string>
+
+    <string name="button_send">SEND</string>
+    <string name="button_play">PLAY</string>
+    <!--suggested frend list-->
+    <string name="friend_suggestion_title">suggestions</string>
+    <string name="invite_friend">invite friend</string>
+    <string name="friend_on_belive">Friends on BeLive</string>
+    <string name="txt_friend_invitation_suggestion">Didn\'t see your friend? Invite and get :gem: **100** each :)
+    </string>
+    <string name="txt_friend_invitation_suggestion_non_fb">Your friends aren\'t here yet!\nInvite them and get :gem:
+        **100** each :)
+    </string>
+
+    <!--
+    Your Branch App Key Goes Here
+    If you don't have one, see the Branch Android Quick-Start for how to get one:
+    https://github.com/BranchMetrics/Branch-Integration-Guides/blob/master/android-quick-start.md
+    -->
+    <string name="branch_key">key_live_dbrrqqbTOgKTohwyNrXjgaadDvfSMe2X</string>
+
+    <string name="branch_key_test">key_test_gbDuAtgQPbUGclAuPy2keiepyCmTQCcg</string>
+
+
+    <!--
+    Your Twitter Key and Secret Goes Here
+    If you don't have these, see the Twitter Kit for Android documentation:
+    https://dev.twitter.com/twitter-kit/android
+    -->
+    <!--<string name="twitter_key" translatable="false">YOUR TWITTER APP KEY</string>-->
+    <!--<string name="twitter_secret" translatable="false">YOUR TWITTER APP SECRET</string>-->
+
+    <string name="prelive_change_cover_image">Change cover photo</string>
+    <string name="prelive_notice">To record and post a video,\n it must be at least 1 minute long.</string>
+    <string name="cover_image_changed">Cover photo changed successfully!</string>
+    <string name="upload_cover_photo">Change Cover</string>
+    <string name="prelive_cover_tip">Boost your views by uploading\na relevant cover photo!</string>
+
+
+    <string name="we_are_under_maintenance">WE ARE UNDER MAINTENANCE</string>
+    <string name="please_visit_us_later">Please visit us later</string>
+    <string name="invite_friend_referral_code">Referral Code</string>
+    <string name="invite_friend_input_your_friend_referral_and_get_gem">Input your friend\'s referral and get 100
+        :gem:
+    </string>
+    <string name="invite_friend_enter_code">Enter code</string>
+    <string name="invite_friend_you_entered_referral_code">You entered Referral Code</string>
+    <string name="invite_friend_please_input_referral_code">Please input Referral Code!</string>
+    <string name="invite_friend_refID_invalid">Referral Code invalid!</string>
+
+    <!-- IAppPay strings -->
+    <string name="iapppay_not_yet_processed">Please wait while your previous order is being processed.</string>
+    <string name="iapppay_ss_orderid">Please take a screenshot and contact customer service with your order ID:&#160;
+    </string>
+    <string name="iapppay_purchase_success">Purchase processed successfully!</string>
+
+    <string name="you_have_been_kicked_out_of_the_stream">You have been kicked out of the stream by BeLive Admin
+    </string>
+    <string name="stream_title_not_available">Please provide a title for your stream</string>
+    <string name="do_you_want_resume_previous_stream">Do you want to resume your previous stream?</string>
+    <string name="resume">Resume</string>
+
+    <string name="hot_can_not_create_group">Connecting to chat room</string>
+    <string name="viewer_can_not_join_group">Connecting to chat room</string>
+
+    <string name="custom_tab_menu_title_share">Share</string>
+
+    <string name="custom_tab_menu_title_copy">Copy text</string>
+
+    <string name="stars_recommended">Recommended</string>
+    <string name="bottom_bar_home">HOME</string>
+    <string name="bottom_bar_post">POST</string>
+    <string name="bottom_bar_search">SEARCH</string>
+    <string name="bottom_bar_challenges">CHALLENGES</string>
+    <string name="bottom_bar_profile">PROFILE</string>
+    <string name="bottom_bar_notifications">Notification</string>
+
+    <!--<string name="formatter_live_stream" translatable="false">dd/MM/yyyy\'T\'HH:mm:ss.SSS\'Z\'</string>-->
+    <string name="formatter_dmy">dd/MM/yyyy</string>
+    <string name="formatter_chat_date">EEEE, dd/MM/yyyy</string>
+    <string name="formatter_dob">dd/MM/yyyy</string>
+    <string name="formatter_wall_feed">dd MMM yyyy</string>
+    <string name="formatter_wall_feed_date">dd MMM</string>
+
+    <string name="btn_post">POST</string>
+
+    <string name="label_free">FREE</string>
+    <string name="label_synthesis">File synthesis…</string>
+
+    <array name="expensive_gifts">
+        <item name="gift_lux_car">Luxury Car</item>
+        <item name="gift_supercar">Supercar</item>
+        <item name="gift_mansion">Mansion</item>
+        <item name="gift_watch">Designer Watch</item>
+        <item name="gift_rose">Rose Bouquet</item>
+        <item name="gift_ring">Diamond Ring</item>
+        <item name="gift_teddy">Teddy Bear</item>
+    </array>
+    <string name="user_exists">ID already exists</string>
+    <string name="shared_live_stream">shared the livestream!</string>
+    <string name="onboarding_title1">Be Live</string>
+    <string name="onboarding_desc1">Connect with real people in real-time</string>
+    <string name="onboarding_title2"><![CDATA[Stream & Earn]]></string>
+    <string name="onboarding_desc2">Be rewarded with instant gifts</string>
+    <string name="onboarding_title3">Share Moments</string>
+    <string name="onboarding_desc3">Keep your followers updated</string>
+    <string name="onboarding_skip">SKIP</string>
+    <string name="welcome_done">Done</string>
+    <string name="font_helveticamedium">helveticamedium.ttf</string>
+    <string name="ban_user_message">Do you want to ban this user ?</string>
+    <string name="ban_user_title">Ban User</string>
+    <string name="ban_user">Ban User</string>
+    <string name="ban_user_successed">You banned the user</string>
+    <string name="ban_user_failed">Failed to ban the user</string>
+    <string name="stop_stream_title">Stop Stream</string>
+    <string name="stop_stream_message">Do you want to stop this stream ?</string>
+
+    <string name="hide_unhide_stream_title">%s Stream</string>
+    <string name="hide_unhide_stream_message">Do you want to %s the stream ?</string>
+    <string name="hide_stream_succeeded">You hid the stream</string>
+    <string name="unhide_stream_succeeded">You unhid the stream</string>
+    <string name="hide_unhide_stream_failed">Failed to %s the stream</string>
+
+    <string name="just_joined_the_stream">just joined the stream</string>
+    <string name="recommended_follow_all">Follow all</string>
+    <string name="recommended_unfollow_all">Unfollow all</string>
+    <string name="recommended_start">START</string>
+
+    <string name="video_call_live_invite_title">LIVE invite</string>
+    <string name="video_call_host_invitation">%s invites you join the LIVE!</string>
+    <string name="video_call_decline">DECLINE</string>
+    <string name="video_call_accept">ACCEPT</string>
+    <string name="vid_call_user_not_available">User is not available</string>
+    <string name="vid_call_declined">Call has been declined</string>
+    <string name="vid_in_a_call">You are currently in a call</string>
+    <string name="ended_stream_post">POST</string>
+    <string name="ended_stream_follow">FOLLOW</string>
+    <string name="ended_stream_profile">PROFILE</string>
+    <string name="ended_stream_back">BACK</string>
+    <string name="start_external_cam_live">Start External Camera Live</string>
+    <string name="stream_id">Stream ID</string>
+    <string name="cashout_not_enough_stars">Not enough Stars available.</string>
+    <string name="cumulative_total_cash">Total Rewards</string>
+    <string name="transaction_hitory">History</string>
+    <string name="accepted">Accepted</string>
+    <string name="pending">Pending</string>
+    <string name="rejected">Rejected</string>
+    <string name="cashout_once_per_month">You have already submitted your request in this month. You may only request
+        once a month.
+    </string>
+    <string name="insufficient_stars">You have insufficient stars</string>
+    <string name="title_share_end_stream" formatted="false">%s @%s\nCome join in the fun with me on BeLive! :)</string>
+    <string name="welcome_stream_message">You\'re now watching %s Type your messages below to join the chat!</string>
+    <string name="calling_disconnect_title">Disconnect</string>
+    <string name="get_daily_next_treat">Grab your daily treats now</string>
+    <string name="treats_reseted">Daily treats has been refreshed. Grab your daily treat now</string>
+    <plurals name="treat_reset_days">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+    <string name="transaction_list_nothing_here">Nothing Here</string>
+    <string name="copy_stream_comment">Copy comment</string>
+    <string name="stream_comment_delete_text">Delete comment</string>
+    <string name="delete_comment_title">Delete comment</string>
+    <string name="delete_comment_body">Do you want to delete this comment ?</string>
+    <string name="delete_comment_delete_button">DELETE</string>
+    <string name="delete_comment_delete_cancel">CANCEL</string>
+    <string name="contacts_friends">Contacts</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="invite">Invite</string>
+    <string name="fetching_contacts">Fetching contacts...</string>
+    <string name="watch_from_browser_user">The user watches from browser</string>
+    <string name="trivia_ans_correct">Correct!</string>
+    <string name="trivia_ans_incorrect">Incorrect</string>
+    <string name="trivia_ans_eliminated">Disqualified</string>
+    <string name="trivia_game_leave_confirm_text">Once you leave this stream, you will be eliminated from winning the
+        game
+    </string>
+    <string name="leave_text">Leave</string>
+    <string name="stay_text">Stay</string>
+    <string name="leave_the_game_text">Leave the game?</string>
+    <!--<string name="trivia_lose_title">You\'re out of the game!</string>-->
+    <!--<string name="trivia_lose_content">That was a good try! You can still watch the show though!</string>-->
+    <!--<string name="trivia_revise_content">Gah, you almost had it!\nUse 1 revive to continue?</string>-->
+    <string name="trivia_use_revise">Use revive</string>
+    <string name="trivia_get_revises">Get revives</string>
+    <string name="revives_count">%s Revives</string>
+    <string name="top_winner_title">Top Winners</string>
+    <string name="out_of_unpurchasable_gift">You have run out of this gift</string>
+    <string name="revived_from_last_round" formatted="false">%s Revived from last round</string>
+    <string name="popup_winner_title">You\'re the Master Brain</string>
+    <string name="winner_money_title">You beat the game and won</string>
+    <string name="winner_notification_of_admin">We will contact you via BeLive chat (in your Profile page) within 1
+        working day. Please reply within 24 hrs, otherwise your prize will be revoked.
+    </string>
+    <string name="winner_share_title">Tell your friend!</string>
+    <string name="mb_not_begun_yet">Master Brain, the Live Trivia Game Show has not begun yet!</string>
+    <string name="count_down_winners_list_ended_title">Winner list ended in</string>
+    <string name="minimum_for_cash">The minimum for cash out amount is $20, keep playing Master Brain to win more
+        money!
+    </string>
+    <string name="dollar_amount">S$ %1$.02f</string>
+    <string name="dollar_amount_non_floating_point">S$ %1$.0f</string>
+    <string name="dollar_amount_with_non_currency">%1$.02f</string>
+    <string name="dollar_amount_non_floating_point_with_non_currency">%1$.0f</string>
+    <string name="trivia_aw_okay">Aw, Okay</string>
+    <string name="trivia_get_revives">Get revives</string>
+    <string name="trivia_cancel_use_revise">Cancel</string>
+    <string name="trivia_winners_number" formatted="false">%s winners!</string>
+    <string name="trivia_ranking_this_week">This Week</string>
+    <string name="trivia_ranking_all_time">All Time</string>
+    <string name="cashout_your_balance">Your balance</string>
+    <string name="cashout_exchange">Exchange</string>
+    <string name="claim_button">CLAIM</string>
+    <string name="profile_dialog_follow">Following</string>
+    <string name="search_user_load_more_friends">Load more friends</string>
+    <string name="hello_email">hello@belive.sg.</string>
+
+    <string name="today">Today</string>
+    <string name="chattime_today">@string/today</string>
+    <string name="chattime_yesterday">Yesterday</string>
+    <string name="gcox_fanmeet">Gcox Fan Meet</string>
+    <string name="login_text_desc">Ahihi ahoho ahehe. The Lunar New Year is coming up and I feel good about it</string>
+    <string name="sign_in_or_register">Sign in or Register</string>
+    <string name="coming_soon">Coming soon!</string>
+    <string name="influencers_message">Influencer Page should include all non-celebrity Influencers (no blue tick)
+    </string>
+    <string name="okay">OKAY</string>
+
+    <string name="challengers_title">Challenges</string>
+    <string name="challengers_detail">- Business Class Ticket Vegas \n- 5 Start Hotel Accommodation \n- Dinner with
+        Manny Pacquaio
+    </string>
+
+    <string name="join_challenge">JOIN CHALLENGE</string>
+    <string name="follow">FOLLOW</string>
+    <string name="posted">Posted</string>
+    <string name="challenge_duration">Challenge Duration:</string>
+    <string name="challenge_joined">Joined</string>
+    <string name="gime_me">GIME ME</string>
+    <string name="send_gift_describe">Bigger gifts have higher star values.</string>
+    <string name="stars_title">STARS</string>
+    <string name="stars_loyalty">LOYALTY HISTORY</string>
+    <string name="view_details">VIEW DETAILS</string>
+    <string name="challengers_join">JOIN</string>
+    <string name="challengers_joined">JOINED</string>
+    <string name="challenges_entries_count">%s entries</string>
+    <string name="tab_bar_notification_title">NOTIFICATION</string>
+    <string name="post_challenge_title">POST A CHALLENGE</string>
+    <string name="tab_bar_challenge_title">CHALLENGE</string>
+    <string name="create_your_profile">Create your profile</string>
+    <string name="email_invalid">Email is invalid</string>
+    <string name="invite_friend_title">Get %s gems for both you and your friend \nwhen he or she uses your referral
+        code!
+    </string>
+    <string name="referral_code_title">Share your referral code</string>
+    <string name="can_not_join_challenge">You can\'t join your challenge</string>
+    <string name="share_via">Share via</string>
+    <string name="share_refid">Referral Id copied</string>
+    <string name="toast_if_joined_challege">You can\'t join this challenge because you already joined</string>
+    <string name="toast_limited_join_challege">The challenge has reach submission limited</string>
+    <string name="gacha_prizes_title">Gacha prizes</string>
+    <string name="home_tab_celebrities">CELEBRITIES</string>
+    <string name="home_tab_influencers">INFLUENCERS</string>
+    <string name="home_tab_merchants">MERCHANTS</string>
+    <string name="home_tab_events">EVENTS</string>
+    <string name="notification_celeb_connect">Celeb-Connect</string>
+    <string name="notification_fan_connect">Fan-Connect</string>
+    <string name="notification_gacha_prizes">REWARDS</string>
+    <string name="gid_challenge_button">CHALLENGE</string>
+    <string name="nothing_here">Nothing here</string>
+    <string name="referral_code_invalid">Code is invalid.</string>
+    <string name="send_gift_button">SEND GIFT</string>
+    <string name="user_type_celebrity">CELEBRITY</string>
+    <string name="user_type_merchant">MERCHANT</string>
+    <string name="user_type_influencer">INFLUENCER</string>
+    <string name="entries_title">Entries</string>
+    <string name="display_name_error">Please add Display Name!</string>
+    <string name="input_email_error">Please add correct Email!</string>
+    <string name="prizes">Prizes</string>
+    <string name="challenge_entries">Challenge Entries</string>
+    <string name="gift">GIFT</string>
+    <string name="topfan_empty_text">Be the first fan to appear in this leaderboard by sending Gifts!</string>
+    <string name="me_topfan_empty_text">Don\'t worry, you will have your fans coming in soon!</string>
+    <string name="block_user">Block User</string>
+    <string name="blocked">Blocked</string>
+    <string name="unblock">unblock successfully</string>
+    <string name="newsfeed_menu_folow">Follow</string>
+    <string name="unfollow_confirmation">Are you sure, you want to stop following</string>
+    <string name="do_you_want_to_delete_this_challenge">Do you want to delete this challenge?</string>
+    <string name="login_title_text">Connecting The World\'s Most Powerful Influencers</string>
+    <string name="newsfeed_menu_edit_submission">Edit submission</string>
+    <string name="newsfeed_menu_delete_submission">Delete submission</string>
+    <string name="do_you_want_to_delete_this_submisson">Do you want to delete this submission?</string>
+    <string name="edit">EDIT</string>
+    <string name="edit_challenge_title">EDIT CHALLENGE</string>
+    <string name="email_have_not_been_installed">Email have not been installed.</string>
+    <string name="label_brush">Brush</string>
+    <string name="label_emoji">Emoji</string>
+    <string name="label_sticker">Sticker</string>
+    <string name="label_eraser">Eraser</string>
+    <string name="label_text">Text</string>
+    <string name="label_filter">Filter</string>
+    <string name="label_adjust">Adjust</string>
+    <string name="custom_permission_description">ACCLAIM! needs access to your camera to take photos and videos. It lets
+        other users view your photo and identify you.
+    </string>
+    <string name="report_user_text">Report submitted. We will review and process your report.</string>
+    <string name="redemption_code_title">Redemption Code</string>
+    <string name="redemption_hint">Enter Code</string>
+
+    <string name="please_input_redemption_code">Please input redemption code</string>
+    <string name="submit_redemption_code_success">Redemption successful!</string>
+    <string name="redemption_code_not_found">Invalid code.</string>
+    <string name="redemption_code_already_applied">Redemption code has already been used. Please try with another code.</string>
+    <string name="redemption_receipt_gem">You have received %s gems.</string>
+    <string name="title_activity_reward">RewardActivity</string>
+    <string name="how_to_play">HOW TO PLAY</string>
+    <string name="title_activity_prize_list">PrizeListActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="price_tab_normal">Normal</string>
+    <string name="price_tab_special">Special</string>
+    <string name="price_tab_premium">Premium</string>
+    <string name="price_tab_exclusive">Exclusive</string>
+    <string name="use_points">USE POINTS?</string>
+    <string name="prize_list_title">Prize List</string>
+    <string name="redeem_input_email_title">Enter your email to redeem</string>
+    <string name="redeem_success_title">RECEIVED</string>
+    <string name="redeem_success_message">We have received your redemption and \nwill contact you via your email within
+        \n14 days.</string>
+    <string name="reward_message">Each tier has its separate prize pools which you can view int the Prize List.</string>
+    <string name="redeem_not_enough_gem">You do not have enough Gems or Loyalty</string>
+
+</resources>

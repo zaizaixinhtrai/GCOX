@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/llChallengers"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+
+    <com.gcox.fansmeet.customview.RoundRectCornerImageView
+            android:id="@+id/imvChallengers"
+            android:layout_width="80dp"
+            android:layout_marginTop="15dp"
+            tools:src="@drawable/ngoctrinh"
+            app:radius="8dp"
+            android:scaleType="fitXY"
+            android:layout_height="100dp"/>
+
+    <LinearLayout android:id="@+id/llChallengersTitle"
+                  android:layout_width="wrap_content"
+                  android:layout_marginTop="15dp"
+                  android:layout_marginStart="15dp"
+                  android:gravity="start"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvChallengersTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#BBCC00"
+                android:textSize="15sp"
+                android:gravity="start|center"
+                tools:text="T-Shirt Design Challenge"
+                app:appFont="@string/font_opensanssemibold"/>
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9B9B9B"
+                android:textSize="12sp"
+                android:gravity="start"
+                tools:text="Challenge Duration: 12Jan - 30Jan"
+                app:appFont="@string/font_opensanssemibold"/>
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/color_9c9c9c"
+                android:textSize="12sp"
+                android:gravity="start"
+                tools:text="Win a all-expenses paid trip to Vegas to watch Pacquaio vs Mayweather"
+                app:appFont="@string/font_opensanssemibold"/>
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#D8D8D8"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="PRIZES"
+                app:appFont="@string/font_opensanssemibold"/>
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+                android:id="@+id/tvPrizes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="#D8D8D8"
+                android:textSize="12sp"
+                android:gravity="center|start"
+                tools:text="@string/challengers_detail"
+                app:appFont="@string/font_opensanssemibold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

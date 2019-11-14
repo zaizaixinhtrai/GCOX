@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/themedToolbarHeight"
+    android:background="?attr/themedToolbarDrawable"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <ImageButton
+        android:id="@+id/slider_menu"
+        style="@style/toolbar_button_ripple"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:clickable="false"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="?attr/themedToolbarMenuIconDrawable" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="60dp"
+        android:gravity="center">
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/txt_title_screen"
+            style="?attr/themedToolbarTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:visibility="gone"
+            tools:text="fdsfjksdjkfdjkfsdfdfsdfdfsdfsdfskdfdsffdfdfdf"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imv_title"
+            android:layout_width="@dimen/icon_toolbar_width"
+            android:layout_height="@dimen/icon_toolbar_height"
+            android:layout_gravity="center"
+            android:background="?attr/themedToolbarLogoDrawable"
+            android:visibility="visible"
+            tools:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|center"
+        android:gravity="center">
+
+        <com.gcox.fansmeet.customview.CustomFontButton
+            android:id="@+id/btJoinChallenge"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/tool_bar_join_button_background"
+            android:gravity="center"
+            android:text="Joined"
+            android:textColor="@color/back_ground_btn_join"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            app:appFont="@string/font_opensansbold" />
+
+        <ImageButton
+            android:id="@+id/imEditProfile"
+            style="@style/toolbar_button_ripple"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+</android.support.v7.widget.Toolbar>

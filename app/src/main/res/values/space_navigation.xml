@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="space_navigation_height">60dp</dimen>
+    <dimen name="main_content_height">60dp</dimen>
+    <dimen name="space_center_button_default_size">40dp</dimen>
+    <dimen tools:override="true" name="design_fab_image_size">56dp</dimen>
+    <dimen name="center_button_default_elevation">7.5dp</dimen>
+    <dimen name="space_center_button_margin">0dp</dimen>
+    <dimen name="center_content_width">50dp</dimen>
+    <dimen name="space_item_icon_default_size">18dp</dimen>
+    <dimen name="space_item_icon_only_size">25dp</dimen>
+    <dimen name="space_item_text_default_size">8sp</dimen>
+    <dimen name="badge_left_margin">5dp</dimen>
+    <dimen name="view_bottom_margin">50dp</dimen>
+    <dimen name="space_item_icon_height">24dp</dimen>
+    <dimen name="space_item_icon_width">21dp</dimen>
+    <dimen name="space_live_item_icon_height">24dp</dimen>
+    <dimen name="space_live_item_icon_width">34.5dp</dimen>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.gcox.fansmeet.util.view.NonSwipeableViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"/>
+
+    <FrameLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_dim_stream"
+            android:visibility="invisible">
+
+        <com.gcox.fansmeet.customview.arclayout.ArcLayout
+                android:id="@+id/arcLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                app:arc_axisRadius="@dimen/arc_axisRadius"
+                app:arc_freeAngle="false"
+                app:arc_origin="bottom"
+                app:arc_radius="@dimen/arc_radius">
+
+            <Button
+                    android:id="@+id/btn_arc_comment"
+                    style="@style/Item.Path"
+                    android:background="@drawable/write_post_quote"
+                    app:arc_angle="50"/>
+
+            <Button
+                    android:id="@+id/btn_arc_image"
+                    style="@style/Item.Path"
+                    android:background="@drawable/write_post_pic"
+                    app:arc_angle="70"/>
+
+            <Button
+                    android:id="@+id/btn_arc_video"
+                    style="@style/Item.Path"
+                    android:background="@drawable/write_post_camera"
+                    app:arc_angle="100"/>
+
+            <Button
+                    android:id="@+id/btn_arc_challenge"
+                    style="@style/Item.Path"
+                    android:background="@drawable/write_post_challenge"
+                    app:arc_angle="120"/>
+
+        </com.gcox.fansmeet.customview.arclayout.ArcLayout>
+    </FrameLayout>
+
+    <com.gcox.fansmeet.customview.spacenavigationview.SpaceNavigationView
+            android:id="@+id/snvBottomBar"
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@+id/viewPager"
+            android:layout_height="wrap_content"
+            android:background="@color/bottom_bar_background_color"
+            app:center_button_icon="?attr/themedNavCenterDrawable"
+            app:center_button_color="@color/background_tab_home"
+            app:space_item_icon_only_size="@dimen/nav_icon_size"
+            app:center_button_elevation="0dp"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

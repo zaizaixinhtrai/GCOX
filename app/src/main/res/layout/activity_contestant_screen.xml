@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                                              android:id="@+id/swiperefresh"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="match_parent">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@color/color_151515"
+                android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:paddingEnd="@dimen/profile_padding_right"
+                                                     android:paddingStart="@dimen/profile_padding_left"
+                                                     android:paddingBottom="15dp"
+                                                     android:background="@color/color_151515">
+
+            <include
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/llImage"
+                    android:layout_marginTop="15dp"
+                    layout="@layout/feed_header_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <View android:id="@+id/separate"
+                  android:layout_marginTop="15dp"
+                  android:layout_width="match_parent"
+                  android:background="@color/separate_feed_color"
+                  app:layout_constraintTop_toBottomOf="@+id/llImage"
+                  android:layout_height="0.5dp"/>
+
+            <FrameLayout
+                    android:id="@+id/fmMedia"
+                    android:layout_width="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/separate"
+                    android:layout_height="250dp">
+
+                <com.gcox.fansmeet.customview.RoundRectCornerImageView
+                        android:id="@+id/imageEntries"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        app:layout_constraintTop_toBottomOf="@+id/separate"
+                        android:scaleType="centerCrop"
+                        app:radius="10dp"
+                        tools:src="@drawable/ngoctrinh"
+                        android:layout_height="match_parent"/>
+
+                <FrameLayout
+                        android:id="@+id/rlTextureVideoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:layout_constraintTop_toBottomOf="@+id/separate"
+                        android:background="@android:color/black"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                    <TextureView
+                            android:id="@+id/textureVideoView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <com.gcox.fansmeet.customview.autolinktextview.AutoLinkTextView
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/tvDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fmMedia"
+                    android:textColor="@color/color_9c9c9c"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    tools:text="Every like gives 1 Start Point Gifts have different Start Value"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+            <include
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+                    android:id="@+id/ln_action_group"
+                    layout="@layout/action_layout_entries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="-15dp"
+                    android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                    android:id="@+id/llLikesCount"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_action_group"
+                    android:layout_height="wrap_content">
+
+                <ImageView android:layout_width="13dp"
+                           android:src="@drawable/icon_like_small"
+                           android:layout_height="13dp"/>
+
+                <com.gcox.fansmeet.customview.CustomFontTextView
+                        android:id="@+id/tvLikesCount"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_9c9c9c"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:text="148,550 likes"
+                        app:appFont="@string/font_opensanssemibold"/>
+            </LinearLayout>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvHashTag"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/llLikesCount"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textColor="@color/color_2587E7"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="#mannytishirtchallengers"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/tvMoreComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvHashTag"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:paddingRight="10dp"
+                    tools:text="View all 10,456 comments"
+                    android:textColor="@color/color_9c9c9c"
+                    app:appFont="@string/font_opensanssemibold"/>
+
+            <LinearLayout
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMoreComments"
+                    android:id="@+id/commentListLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"/>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

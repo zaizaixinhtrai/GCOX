@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="?attr/themedScreenBackgroundColor"
+                                                 tools:context="com.gcox.fansmeet.features.prizelist.PrizeListActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+            <com.gcox.fansmeet.customview.CustomFontTextView
+                    android:id="@+id/toolbar_title"
+                    style="?attr/themedToolbarTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:textAllCaps="true"
+                    android:layout_gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+        <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                app:tabTextColor="#FFFFFF"
+                app:tabSelectedTextColor="#278BED"
+                app:tabIndicatorColor="#278BED"
+                app:tabTextAppearance="@style/MyTabTextAppearance"
+                app:tabGravity="center"
+                android:layout_gravity="center"
+                app:tabMode="fixed"
+        />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+            android:id="@+id/vpPrize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:visibility="gone"
+              android:id="@+id/tvNothing"
+              android:layout_gravity="center"
+              android:textSize="16sp"
+              tools:visibility="visible"
+              android:text="@string/toppan_have_not_fan"
+              android:textColor="?attr/themedNothingTextColor"
+              android:layout_height="wrap_content"/>
+</android.support.design.widget.CoordinatorLayout>

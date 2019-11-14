@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="GenderedCircleImageView">
+        <attr name="gender" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="male" value="0" />
+            <enum name="female" value="1" />
+            <enum name="secret" value="2" />
+        </attr>
+        <attr name="genderIconWidth" format="dimension" />
+        <attr name="genderIconHeight" format="dimension" />
+        <attr name="genderIconMarginRelativeHorizon" format="dimension" />
+        <attr name="genderIconMarginRelativeVertical" format="dimension" />
+        <attr name="genderPosition" format="enum">
+            <enum name="leftTop" value="0" />
+            <enum name="rightTop" value="1" />
+            <enum name="leftBottom" value="2" />
+            <enum name="rightBottom" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircularImageViewStyle">
+        <attr name="circularImageViewDefault" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularImageViewOld">
+        <attr name="border" format="boolean"></attr>
+        <attr name="border_width" format="integer"></attr>
+        <attr name="border_color" format="color"></attr>
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="TabBarCount">
+        <attr name="tab_count" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference"></attr>
+    </declare-styleable>
+
+    <!--ooVoo Api For Video chat -->
+
+    <declare-styleable name="ButtonBarContainerTheme">
+
+    </declare-styleable>
+    <declare-styleable name="DynamicAbsoluteLayout_Layout">
+        <attr name="layout_x" format="dimension" />
+        <attr name="layout_y" format="dimension" />
+    </declare-styleable>
+
+    <!--tabStrip -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsTextDefaultColor" format="color" />
+        <attr name="pstsTextSelectedColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsIndicatorWidth" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="selectedFont" format="string" />
+        <attr name="defaultFont" format="string" />
+        <attr name="tabSelectedTextSize" format="integer" />
+        <attr name="tabTextSize" format="integer" />
+        <attr name="tralling_space" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RangeSeekBar">
+        <attr name="absoluteMinValue" format="integer|float" />
+        <attr name="absoluteMaxValue" format="integer|float" />
+        <attr name="singleThumb" format="boolean" />
+    </declare-styleable>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension" />
+        <attr name="rightEdgeSwipeOffset" format="dimension" />
+        <attr name="topEdgeSwipeOffset" format="dimension" />
+        <attr name="bottomEdgeSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="clickToClose" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontEditText">
+        <attr name="edt_drawable_width" format="dimension" />
+        <attr name="edt_drawable_height" format="dimension" />
+        <attr name="edt_drawable_start_width" format="dimension" />
+        <attr name="edt_drawable_start_height" format="dimension" />
+        <attr name="edt_drawable_end_width" format="dimension" />
+        <attr name="edt_drawable_end_height" format="dimension" />
+        <attr name="edt_drawable_top_width" format="dimension" />
+        <attr name="edt_drawable_top_height" format="dimension" />
+        <attr name="edt_drawable_bottom_width" format="dimension" />
+        <attr name="edt_drawable_bottom_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontTextView">
+        <attr name="appFont" format="string" />
+        <attr name="textStyle" format="integer" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="CustomFontCheckBox">-->
+        <!--<attr name="appFont" format="string" />-->
+        <!--<attr name="textStyle" format="integer" />-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="AutoResizeTextView">
+        <attr name="maxTextSize" format="dimension" />
+        <attr name="minTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BubbleSpeechTutorialTextView">
+        <attr name="isStandAloneView" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CompoundDrawableTextView">
+        <attr name="drawable_width" format="dimension" />
+        <attr name="drawable_height" format="dimension" />
+        <attr name="drawable_start_width" format="dimension" />
+        <attr name="drawable_start_height" format="dimension" />
+        <attr name="drawable_end_width" format="dimension" />
+        <attr name="drawable_end_height" format="dimension" />
+        <attr name="drawable_top_width" format="dimension" />
+        <attr name="drawable_top_height" format="dimension" />
+        <attr name="drawable_bottom_width" format="dimension" />
+        <attr name="drawable_bottom_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="OnlyDrawableClickableTextView">
+        <attr name="drawable_clickable">
+            <flag name="left" value="0x1" />
+            <flag name="top" value="0x2" />
+            <flag name="right" value="0x4" />
+            <flag name="bottom" value="0x8" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="scaleStyle">
+        <attr name="scalableType">
+            <enum name="none" value="0" />
+
+            <enum name="fitXY" value="1" />
+            <enum name="fitStart" value="2" />
+            <enum name="fitCenter" value="3" />
+            <enum name="fitEnd" value="4" />
+
+            <enum name="leftTop" value="5" />
+            <enum name="leftCenter" value="6" />
+            <enum name="leftBottom" value="7" />
+            <enum name="centerTop" value="8" />
+            <enum name="center" value="9" />
+            <enum name="centerBottom" value="10" />
+            <enum name="rightTop" value="11" />
+            <enum name="rightCenter" value="12" />
+            <enum name="rightBottom" value="13" />
+
+            <enum name="leftTopCrop" value="14" />
+            <enum name="leftCenterCrop" value="15" />
+            <enum name="leftBottomCrop" value="16" />
+            <enum name="centerTopCrop" value="17" />
+            <enum name="centerCrop" value="18" />
+            <enum name="centerBottomCrop" value="19" />
+            <enum name="rightTopCrop" value="20" />
+            <enum name="rightCenterCrop" value="21" />
+            <enum name="rightBottomCrop" value="22" />
+
+            <enum name="startInside" value="23" />
+            <enum name="centerInside" value="24" />
+            <enum name="endInside" value="25" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ListViewMaxHeight">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="WaitingDots">
+        <attr name="dotsColor" format="color" />
+        <attr name="period" format="integer" />
+        <attr name="jumpHeight" format="integer" />
+        <attr name="autoplay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BadgeImageView">
+        <attr name="showBadge" format="boolean" />
+        <attr name="badgeX" format="dimension" />
+        <attr name="badgeY" format="dimension" />
+        <attr name="badgeRadius" format="dimension" />
+        <attr name="badgeColor" format="color" />
+        <attr name="badgePosition" format="enum">
+            <enum name="leftTop" value="0" />
+            <enum name="rightTop" value="1" />
+            <enum name="leftBottom" value="2" />
+            <enum name="rightBottom" value="3" />
+        </attr>
+        <attr name="showText" format="boolean" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textMarginX" format="dimension" />
+        <attr name="textMarginY" format="dimension" />
+        <attr name="text" format="string|reference" />
+        <attr name="textPosition" format="enum">
+            <enum name="leftTop" value="0" />
+            <enum name="rightTop" value="1" />
+            <enum name="leftBottom" value="2" />
+            <enum name="rightBottom" value="3" />
+            <enum name="center" value="4" />
+        </attr>
+        <attr name="fontName" format="string|reference" />
+    </declare-styleable>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="StateProgressbar">
+        <attr name="indicatorTextSize" format="dimension" />
+        <attr name="progressThickness" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="maxProgress" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TagGroup">
+        <!-- Whether the tag group is in append mode. -->
+        <attr name="atg_isAppendMode" format="boolean" />
+        <!-- If the tag group is in append mode, what the hint of input tag. -->
+        <attr name="atg_inputHint" format="string" />
+
+        <!-- The tag view outline border color. -->
+        <attr name="atg_borderColor" format="color" />
+        <!-- The tag view text color. -->
+        <attr name="atg_textColor" format="color" />
+        <!-- The tag view background color. -->
+        <attr name="atg_backgroundColor" format="color" />
+
+        <!-- The dash outline border color, when in append mode. -->
+        <attr name="atg_dashBorderColor" format="color" />
+        <!-- The input tag hint text color, when in append mode. -->
+        <attr name="atg_inputHintColor" format="color" />
+        <!-- The input tag type text color, when in append mode. -->
+        <attr name="atg_inputTextColor" format="color" />
+
+        <!-- The checked tag view outline border color. -->
+        <attr name="atg_checkedBorderColor" format="color" />
+        <!-- The checked text color. -->
+        <attr name="atg_checkedTextColor" format="color" />
+        <!-- The checked marker color. -->
+        <attr name="atg_checkedMarkerColor" format="color" />
+        <!-- The checked tag view background color. -->
+        <attr name="atg_checkedBackgroundColor" format="color" />
+
+        <!-- The tag view background color, when the tag view is being pressed. -->
+        <attr name="atg_pressedBackgroundColor" format="color" />
+
+        <!-- The tag view outline border stroke width. -->
+        <attr name="atg_borderStrokeWidth" format="dimension" />
+        <!-- The tag view text size. -->
+        <attr name="atg_textSize" format="dimension" />
+
+        <attr name="atg_horizontalSpacing" format="dimension" />
+        <attr name="atg_verticalSpacing" format="dimension" />
+        <attr name="atg_horizontalPadding" format="dimension" />
+        <attr name="atg_verticalPadding" format="dimension" />
+        <attr name="atg_tag_text_font" format="string" />
+        <attr name="atg_gravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="tagGroupStyle" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LuckyWheelView">
+        <attr name="lkwBackgroundColor" format="color" />
+        <attr name="lkwCursor" format="reference" />
+        <attr name="lkwCenterImage" format="reference" />
+        <attr name="lkwTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularColorItem">
+        <attr name="fillColor" format="color" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="fillRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="VideoRangeSeekBar">
+        <attr name="gradientWidth" format="dimension" />
+        <attr name="thumbBandHeight" format="dimension" />
+        <attr name="thumbWidth" format="dimension" />
+        <attr name="indicatorWidth" format="dimension" />
+
+        <attr name="leftThumbNormal" format="reference" />
+        <attr name="leftThumbPress" format="reference" />
+        <attr name="rightThumbNormal" format="reference" />
+        <attr name="rightThumbPress" format="reference" />
+        <attr name="leftGradient" format="reference" />
+        <attr name="rightGradient" format="reference" />
+        <attr name="videoClipMask" format="reference" />
+        <attr name="indicatorImage" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="BeLiveAutoResizeTextView">
+        <attr name="max_lines" format="integer" />
+        <attr name="min_text_size" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RoundRectCornerImageView">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BlurLayout">
+        <attr name="blk_downscaleFactor" format="float" />
+        <attr name="blk_blurRadius" format="integer" />
+        <attr name="blk_fps" format="integer" />
+        <attr name="blk_cornerRadius" format="dimension" />
+        <attr name="blk_alpha" format="float" />
+    </declare-styleable>
+
+    <attr name="arc_origin">
+        <!-- Value same as the android:gravity -->
+        <flag name="top" value="0x30"/>
+        <flag name="bottom" value="0x50"/>
+        <flag name="left" value="0x03"/>
+        <flag name="right" value="0x05"/>
+        <flag name="center_vertical" value="0x10"/>
+        <flag name="center_horizontal" value="0x01"/>
+        <flag name="center" value="0x11"/>
+        <flag name="start" value="0x00800003"/>
+        <flag name="end" value="0x00800005"/>
+    </attr>
+
+    <declare-styleable name="arc_ArcLayout">
+        <attr name="arc_origin"/>
+        <attr name="arc_color" format="color"/>
+        <attr name="arc_radius" format="dimension"/>
+        <attr name="arc_axisRadius" format="dimension"/>
+        <attr name="arc_freeAngle" format="boolean"/>
+        <attr name="arc_reverseAngle" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="arc_ArcLayout_Layout">
+        <attr name="arc_origin"/>
+        <attr name="arc_angle" format="float"/>
+    </declare-styleable>
+
+</resources>

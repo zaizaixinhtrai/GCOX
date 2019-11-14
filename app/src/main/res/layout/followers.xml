@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                              android:id="@+id/swiperefresh"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="match_parent"
+                                              android:background="#000000">
+
+    <FrameLayout
+            android:paddingTop="8dp"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.gcox.fansmeet.core.adapter.recyclerview.LoadMoreRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+
+        <TextView
+                android:id="@+id/txtEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                android:textColor="@color/grey_text_color"
+                android:text="@string/nothing_here"/>
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

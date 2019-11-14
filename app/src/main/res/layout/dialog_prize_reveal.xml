@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:background="@color/dim_background_dialog">
+
+    <!--<ImageView-->
+    <!--android:layout_width="64dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:src="@drawable/topbar_belive_logo" />-->
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/txt_daily_treat_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="YOU GOT..."
+            android:textColor="@color/dialogBlue"
+            android:textSize="20sp"
+            app:appFont="@string/font_opensansbold"/>
+
+    <FrameLayout
+            android:id="@+id/fmImageGift"
+            android:layout_width="200dp"
+            android:layout_height="200dp">
+
+        <ImageView
+                android:id="@+id/img_glow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_glow_blue"/>
+
+        <ImageView
+                android:id="@+id/img_sparkle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <ImageView
+                android:id="@+id/img_gift"
+                android:layout_width="150dp"
+                android:scaleType="centerCrop"
+                android:layout_height="150dp"
+                android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvPrizeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:appFont="@string/font_opensansemibold"
+            android:gravity="center"
+            tools:text="5"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="58dp"
+            android:text="@string/redeem_input_email_title"
+            android:gravity="center"
+            android:textColor="@color/clTextGrey"
+            android:textSize="13sp"
+            app:appFont="@string/font_opensansregular"
+            />
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/daily_treat_share_message"
+            android:textColor="@color/color_9b9b9b"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:appFont="@string/font_helveticamedium"/>
+
+    <com.gcox.fansmeet.customview.CustomFontEditText
+            android:id="@+id/edtEmail"
+            style="@style/user_profile_edittext_style"
+            android:background="@drawable/post_challenge_selector_edittext"
+            android:paddingStart="10dp"
+            android:layout_marginStart="50dp"
+            android:paddingEnd="5dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="example@email.com"
+            android:textColor="@color/white"
+            tools:drawableEnd="@drawable/ic_id_name_invalid"
+            android:textColorHint="#3F3F3F"/>
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvInvalidEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center|end"
+            android:text="@string/email_invalid"
+            android:textColor="#F89E1C"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            app:appFont="@string/font_helvetica"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLimitDisplayName"
+            tools:visibility="visible" />
+
+    <com.gcox.fansmeet.customview.CustomFontButton
+            android:id="@+id/btn_go_to_bag"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/redeem_button_bg"
+            android:minWidth="150dp"
+            android:text="Redeem"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansbold"/>
+
+
+    <com.gcox.fansmeet.customview.CustomFontButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:background="@drawable/gray_background_border"
+            android:minWidth="150dp"
+            android:text="@string/ended_stream_back"
+            android:textAllCaps="true"
+            android:textColor="@color/dialogBlue"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansbold"/>
+
+</LinearLayout>

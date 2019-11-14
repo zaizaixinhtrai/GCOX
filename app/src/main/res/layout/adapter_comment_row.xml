@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fm_padding"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp">
+
+        <FrameLayout
+            android:id="@+id/fm_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/newfeed_imv_user_background">
+
+            <com.gcox.fansmeet.customview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="@dimen/newfeed_user_image"
+                android:layout_height="@dimen/newfeed_user_image"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+
+        <com.gcox.fansmeet.customview.autolinktextview.AutoLinkTextView
+            android:id="@+id/tvSenderDisplayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/fm_image"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:linksClickable="true"
+            android:paddingLeft="4dp"
+            android:paddingRight="7dp"
+            android:textColor="@color/text_color_comment"
+            android:textDirection="locale"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:appFont="@string/font_opensansregular" />
+
+
+        <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/txt_timeAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSenderDisplayName"
+            android:layout_gravity="top"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/fm_image"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:textColor="#DFDFDF"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansemibold" />
+
+    </RelativeLayout>
+</LinearLayout>

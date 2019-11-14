@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatting_send_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f5f5"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <com.gcox.fansmeet.customview.TaggableEditText
+        android:id="@+id/inputComments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/background_input_comment"
+        android:ems="10"
+        android:gravity="center|start"
+        android:hint="@string/write_a_message"
+        android:maxLines="6"
+        android:minHeight="40dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:textColor="#7B7B7C"
+        android:textColorHint="#7B7B7C"
+        android:textSize="13sp"
+        android:windowSoftInputMode="adjustPan|adjustResize" />
+
+
+    <FrameLayout
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:minHeight="40dp"
+        android:minWidth="70dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="5dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_chat_arrow" />
+    </FrameLayout>
+</LinearLayout>

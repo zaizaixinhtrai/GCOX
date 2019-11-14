@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_user_profile_main_content"
+              android:layout_width="match_parent"
+              android:background="#151515"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <include layout="@layout/user_info_item_layout"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"/>
+
+    <include layout="@layout/top_fans_item_layout"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/profile_tab_color"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:id="@+id/btnTabList"
+                style="@style/profile_image_button"
+                android:src="@drawable/ic_profile_bar_list_selected"/>
+
+        <ImageButton
+                android:id="@+id/btnTabGrid"
+                style="@style/profile_image_button"
+                android:src="@drawable/ic_profile_bar_grid"/>
+
+        <ImageButton
+                android:id="@+id/btnTabGift"
+                style="@style/profile_image_button"
+                android:src="@drawable/ic_profile_bar_gift"
+                android:visibility="visible"
+                tools:visibility="visible"/>
+
+    </LinearLayout>
+</LinearLayout>

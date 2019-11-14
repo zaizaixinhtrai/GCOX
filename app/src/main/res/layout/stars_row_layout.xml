@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_marginStart="10dp"
+              android:paddingEnd="7dp"
+              android:paddingStart="7dp"
+              android:layout_marginEnd="10dp"
+              android:background="#242424"
+              android:layout_height="55dp">
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            tools:text="Trivia Challenge"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:layout_gravity="center|start"
+            android:textColor="#BBBBBB"
+            android:layout_height="wrap_content"
+            app:appFont="@string/font_opensansemibold"/>
+
+
+    <com.gcox.fansmeet.customview.CustomFontTextView
+            android:id="@+id/tvStars"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            tools:text="15,000"
+            android:layout_gravity="center|end"
+            android:textColor="#C4D501"
+            android:drawablePadding="3dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_stars_currency"
+            app:appFont="@string/font_opensansemibold"/>
+
+</LinearLayout>
